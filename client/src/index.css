@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.page-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1677ff;
+}
+
+.stat-card .stat-label {
+  color: #666;
+  margin-top: 4px;
+}
+
+.prediction-card {
+  border-left: 4px solid #1677ff;
+}
+
+.prediction-card.risk-high {
+  border-left-color: #ff4d4f;
+}
+
+.prediction-card.risk-medium {
+  border-left-color: #faad14;
+}
+
+.prediction-card.risk-low {
+  border-left-color: #52c41a;
+}
+
+.timeline-container {
+  padding: 16px;
+}
+
+.guest-track-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 24px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-card {
+  width: 400px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1677ff;
+}

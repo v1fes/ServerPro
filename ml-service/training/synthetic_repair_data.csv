@@ -1,0 +1,801 @@
+device_type,brand,model,age_months,total_repairs,months_since_last_repair,total_cost,last_repair_type,season,next_failure_type,failure_probability,will_fail_soon
+tablet,Apple,iPad Air 5,36,4,15,2232.11,screen_damage,1,screen_damage,0.552,1
+tablet,Samsung,Galaxy Tab S9,4,1,0,546.59,software_issue,1,screen_damage,0.371,0
+tablet,Apple,iPad 10,70,4,26,2204.41,battery_degradation,1,charging_port,0.568,1
+phone,Xiaomi,Poco F5,44,2,17,777.4,screen_damage,3,battery_degradation,0.62,1
+phone,Apple,iPhone 14,13,0,13,0.0,none,3,charging_port,0.087,0
+tablet,Samsung,Galaxy Tab S9,59,4,34,1248.26,touchscreen_failure,1,screen_damage,0.679,1
+tablet,Samsung,Galaxy Tab S8,47,0,47,0.0,none,1,water_damage,0.35,0
+phone,Xiaomi,Redmi Note 12,38,3,5,6414.88,water_damage,4,battery_degradation,0.722,1
+laptop,Dell,Latitude 5530,47,1,10,925.45,battery_degradation,3,software_issue,0.444,0
+tablet,Lenovo,Tab P11,22,0,22,0.0,none,2,touchscreen_failure,0.217,0
+phone,Samsung,Galaxy A34,35,2,35,1098.08,screen_damage,1,motherboard_failure,0.34,0
+phone,Apple,iPhone 13,52,5,17,827.36,screen_damage,3,screen_damage,0.701,1
+phone,Xiaomi,Poco F5,51,2,29,714.36,speaker_failure,3,battery_degradation,0.433,0
+tablet,Lenovo,Tab M10,52,2,23,1096.6,speaker_failure,4,screen_damage,0.568,1
+phone,Apple,iPhone 11,20,2,20,799.91,screen_damage,1,speaker_failure,0.319,0
+laptop,Dell,Latitude 5530,60,3,33,1885.61,keyboard_failure,1,battery_degradation,0.561,1
+tablet,Lenovo,Tab P11,69,3,17,5764.49,battery_degradation,3,battery_degradation,0.576,1
+laptop,Lenovo,IdeaPad 5,1,0,1,0.0,none,3,motherboard_failure,0.196,0
+tablet,Apple,iPad 10,14,1,13,1563.25,screen_damage,2,software_issue,0.33,0
+phone,Samsung,Galaxy S22,70,6,33,13777.4,screen_damage,4,screen_damage,0.67,1
+phone,Apple,iPhone 13,40,2,15,289.63,touchscreen_failure,1,screen_damage,0.501,1
+phone,Xiaomi,Poco F5,9,0,9,0.0,none,2,camera_failure,0.291,0
+phone,Xiaomi,Poco F5,71,1,10,662.64,battery_degradation,4,screen_damage,0.691,1
+phone,Xiaomi,Redmi Note 12,40,5,25,12439.37,software_issue,4,charging_port,0.63,1
+tablet,Samsung,Galaxy Tab S9,32,3,14,480.19,battery_degradation,2,charging_port,0.398,0
+tablet,Apple,iPad Air 5,10,2,10,294.37,charging_port,1,battery_degradation,0.23,0
+laptop,Apple,MacBook Pro 14,31,1,17,1672.44,overheating,2,speaker_failure,0.256,0
+tablet,Lenovo,Tab M10,32,1,30,2018.74,software_issue,1,battery_degradation,0.248,0
+tablet,Samsung,Galaxy Tab A8,55,4,26,4670.25,battery_degradation,1,screen_damage,0.621,1
+phone,Samsung,Galaxy S23,14,1,3,478.98,screen_damage,2,battery_degradation,0.402,0
+laptop,Lenovo,IdeaPad 5,60,2,15,4372.43,screen_damage,1,water_damage,0.49,1
+phone,Xiaomi,Mi 13,2,0,2,0.0,none,2,water_damage,0.254,0
+phone,Samsung,Galaxy A34,62,4,13,8646.5,water_damage,2,charging_port,0.772,1
+laptop,Apple,MacBook Air M2,34,0,34,0.0,none,4,charging_port,0.305,0
+laptop,Dell,Latitude 5530,72,2,31,773.98,screen_damage,1,motherboard_failure,0.459,1
+tablet,Lenovo,Tab P11,41,0,41,0.0,none,4,charging_port,0.216,0
+tablet,Lenovo,Tab P11,8,0,8,0.0,none,1,touchscreen_failure,0.232,0
+phone,Apple,iPhone 15,9,0,9,0.0,none,2,water_damage,0.13,0
+laptop,Apple,MacBook Pro 14,32,2,2,3096.91,keyboard_failure,3,battery_degradation,0.477,1
+laptop,Lenovo,Legion 5,41,5,15,3320.18,screen_damage,3,overheating,0.556,1
+laptop,HP,Pavilion 15,2,0,2,0.0,none,1,software_issue,0.102,0
+phone,Xiaomi,Redmi Note 12,65,8,16,2649.13,screen_damage,1,screen_damage,0.736,1
+phone,Samsung,Galaxy S23,21,2,14,4168.72,screen_damage,1,water_damage,0.429,0
+tablet,Lenovo,Tab M10,14,0,14,0.0,none,2,screen_damage,0.258,0
+laptop,Apple,MacBook Air M1,71,5,9,3404.35,overheating,3,data_recovery,0.746,1
+phone,Xiaomi,Poco X5,65,4,31,2511.21,battery_degradation,1,battery_degradation,0.732,1
+phone,Xiaomi,Poco F5,36,2,2,17.73,software_issue,3,water_damage,0.668,1
+phone,Xiaomi,Poco F5,71,5,27,7011.34,battery_degradation,2,screen_damage,0.622,1
+tablet,Apple,iPad Pro 11,71,6,9,6446.8,water_damage,3,charging_port,0.633,1
+phone,Samsung,Galaxy S22,32,4,6,3536.79,software_issue,4,battery_degradation,0.622,1
+tablet,Lenovo,Tab P11,31,0,31,0.0,none,2,charging_port,0.328,0
+laptop,Apple,MacBook Air M1,43,3,26,6016.76,motherboard_failure,2,water_damage,0.488,1
+laptop,Lenovo,Legion 5,14,0,14,0.0,none,1,screen_damage,0.147,0
+laptop,Lenovo,ThinkPad X1 Carbon,59,5,22,3814.89,charging_port,2,charging_port,0.721,1
+phone,Apple,iPhone 12,52,8,21,5572.06,battery_degradation,3,battery_degradation,0.499,1
+laptop,ASUS,ROG Strix G15,69,2,21,4696.19,keyboard_failure,3,screen_damage,0.448,0
+phone,Xiaomi,Poco X5,5,0,5,0.0,none,4,charging_port,0.097,0
+laptop,HP,EliteBook 840,66,1,7,962.99,charging_port,3,keyboard_failure,0.607,1
+phone,Xiaomi,Poco F5,1,0,1,0.0,none,2,charging_port,0.159,0
+laptop,Dell,XPS 13,43,3,20,4975.41,battery_degradation,3,screen_damage,0.423,0
+tablet,Samsung,Galaxy Tab S8,53,5,20,5030.0,speaker_failure,2,battery_degradation,0.607,1
+phone,Samsung,Galaxy A34,23,1,19,1422.76,screen_damage,1,motherboard_failure,0.288,0
+laptop,HP,Pavilion 15,56,3,20,3487.41,battery_degradation,2,overheating,0.552,1
+tablet,Samsung,Galaxy Tab S8,22,2,21,423.98,battery_degradation,3,water_damage,0.338,0
+phone,Apple,iPhone 13,29,3,25,1493.47,screen_damage,2,battery_degradation,0.25,0
+laptop,ASUS,ZenBook 14,59,1,26,2215.34,battery_degradation,4,battery_degradation,0.46,1
+laptop,Dell,XPS 13,19,0,19,0.0,none,1,software_issue,0.226,0
+phone,Samsung,Galaxy S22,23,2,22,2589.79,charging_port,2,charging_port,0.242,0
+phone,Samsung,Galaxy S22,60,2,33,4939.46,water_damage,4,water_damage,0.519,1
+tablet,Lenovo,Tab M10,71,1,28,2243.02,touchscreen_failure,4,charging_port,0.499,1
+laptop,HP,Pavilion 15,36,2,33,2422.99,battery_degradation,4,motherboard_failure,0.328,0
+phone,Xiaomi,Poco X5,31,0,31,0.0,none,3,charging_port,0.259,0
+tablet,Apple,iPad Air 5,20,2,7,1915.18,touchscreen_failure,2,charging_port,0.322,0
+phone,Samsung,Galaxy A34,43,5,34,5824.05,screen_damage,4,screen_damage,0.477,1
+laptop,ASUS,VivoBook 15,3,0,3,0.0,none,4,battery_degradation,0.186,0
+laptop,Apple,MacBook Air M2,39,1,24,2133.62,overheating,4,charging_port,0.386,0
+tablet,Lenovo,Tab P11,63,0,63,0.0,none,4,speaker_failure,0.344,0
+laptop,Apple,MacBook Air M2,44,1,25,1810.45,motherboard_failure,2,motherboard_failure,0.388,0
+tablet,Lenovo,Tab P11,51,4,36,6630.0,software_issue,4,speaker_failure,0.472,1
+phone,Samsung,Galaxy S22,7,1,4,947.76,battery_degradation,3,camera_failure,0.294,0
+laptop,Dell,Inspiron 15,54,6,16,12523.66,software_issue,1,screen_damage,0.681,1
+laptop,Lenovo,Legion 5,9,1,0,1885.58,software_issue,2,keyboard_failure,0.485,1
+phone,Xiaomi,Redmi Note 12,31,0,31,0.0,none,1,touchscreen_failure,0.23,0
+tablet,Apple,iPad Pro 11,33,0,33,0.0,none,2,battery_degradation,0.268,0
+tablet,Lenovo,Tab P11,21,4,9,1080.99,battery_degradation,3,battery_degradation,0.435,0
+tablet,Lenovo,Tab M10,51,4,12,759.96,charging_port,2,screen_damage,0.693,1
+phone,Xiaomi,Poco X5,16,1,1,868.01,software_issue,3,battery_degradation,0.457,1
+phone,Xiaomi,Poco X5,2,0,2,0.0,none,4,screen_damage,0.23,0
+phone,Samsung,Galaxy S23,59,3,9,3266.15,camera_failure,3,screen_damage,0.717,1
+tablet,Lenovo,Tab M10,60,3,27,6193.01,overheating,3,battery_degradation,0.568,1
+phone,Apple,iPhone 13,58,6,15,11257.14,camera_failure,4,charging_port,0.679,1
+laptop,Apple,MacBook Air M2,42,2,11,2437.75,screen_damage,3,battery_degradation,0.439,0
+laptop,HP,Omen 16,36,1,35,25.38,battery_degradation,1,battery_degradation,0.42,0
+phone,Xiaomi,Poco F5,63,5,35,9477.06,software_issue,4,screen_damage,0.738,1
+laptop,Apple,MacBook Air M1,38,1,14,1011.0,water_damage,3,battery_degradation,0.322,0
+laptop,ASUS,VivoBook 15,45,3,27,7474.74,screen_damage,3,water_damage,0.485,1
+tablet,Samsung,Galaxy Tab A8,40,3,16,1729.04,touchscreen_failure,3,touchscreen_failure,0.561,1
+phone,Xiaomi,Mi 13,24,1,6,540.96,battery_degradation,3,motherboard_failure,0.467,1
+phone,Apple,iPhone 13,30,3,11,1345.81,screen_damage,2,charging_port,0.361,0
+laptop,Apple,MacBook Air M1,71,2,18,3487.09,water_damage,4,water_damage,0.425,0
+phone,Apple,iPhone 15,37,2,30,2393.57,speaker_failure,1,water_damage,0.303,0
+laptop,Dell,XPS 13,9,0,9,0.0,none,1,speaker_failure,0.125,0
+tablet,Lenovo,Tab P11,20,4,4,8111.42,water_damage,1,speaker_failure,0.656,1
+phone,Apple,iPhone 15,54,0,54,0.0,none,2,screen_damage,0.341,0
+tablet,Samsung,Galaxy Tab A8,57,4,19,8601.67,battery_degradation,3,water_damage,0.725,1
+tablet,Lenovo,Tab P11,13,2,12,1038.94,battery_degradation,1,battery_degradation,0.307,0
+phone,Apple,iPhone 12,71,6,4,2347.99,touchscreen_failure,4,speaker_failure,0.748,1
+laptop,Apple,MacBook Air M1,37,1,18,1757.47,battery_degradation,2,speaker_failure,0.326,0
+laptop,ASUS,VivoBook 15,26,1,13,286.94,motherboard_failure,2,motherboard_failure,0.317,0
+laptop,Lenovo,ThinkPad X1 Carbon,8,0,8,0.0,none,3,battery_degradation,0.073,0
+tablet,Lenovo,Tab M10,57,6,7,7030.47,camera_failure,4,battery_degradation,0.737,1
+laptop,ASUS,VivoBook 15,64,1,28,201.1,data_recovery,4,motherboard_failure,0.358,0
+tablet,Samsung,Galaxy Tab S8,33,1,1,228.32,screen_damage,1,screen_damage,0.599,1
+tablet,Samsung,Galaxy Tab S8,6,0,6,0.0,none,2,touchscreen_failure,0.183,0
+laptop,ASUS,VivoBook 15,57,4,17,1814.89,charging_port,4,keyboard_failure,0.66,1
+phone,Samsung,Galaxy S23,53,5,21,4013.23,battery_degradation,2,charging_port,0.561,1
+laptop,Dell,Latitude 5530,64,4,18,6625.84,battery_degradation,1,battery_degradation,0.63,1
+laptop,Apple,MacBook Air M2,33,0,33,0.0,none,4,battery_degradation,0.18,0
+tablet,Apple,iPad 10,70,2,29,2066.24,battery_degradation,3,camera_failure,0.388,0
+tablet,Samsung,Galaxy Tab S8,57,3,3,1526.69,screen_damage,3,screen_damage,0.72,1
+laptop,Dell,XPS 13,4,0,4,0.0,none,2,battery_degradation,0.215,0
+tablet,Apple,iPad Pro 11,71,1,0,1380.63,charging_port,1,screen_damage,0.519,1
+laptop,Apple,MacBook Pro 14,20,1,15,2331.63,motherboard_failure,3,battery_degradation,0.233,0
+laptop,Dell,Inspiron 15,32,2,29,2756.33,software_issue,2,speaker_failure,0.337,0
+phone,Samsung,Galaxy A34,44,0,44,0.0,none,3,battery_degradation,0.407,0
+phone,Samsung,Galaxy S23,63,3,9,3349.11,battery_degradation,3,charging_port,0.672,1
+tablet,Lenovo,Tab M10,59,4,20,8696.02,battery_degradation,2,software_issue,0.724,1
+tablet,Samsung,Galaxy Tab S9,53,3,2,2386.32,charging_port,4,charging_port,0.693,1
+laptop,Lenovo,IdeaPad 5,5,0,5,0.0,none,3,overheating,0.05,0
+phone,Samsung,Galaxy S21,68,1,29,38.37,battery_degradation,2,screen_damage,0.379,0
+phone,Samsung,Galaxy S23,44,1,25,1624.59,software_issue,4,charging_port,0.44,0
+laptop,Dell,Latitude 5530,5,0,5,0.0,none,2,charging_port,0.148,0
+tablet,Lenovo,Tab M10,30,1,23,225.95,charging_port,1,touchscreen_failure,0.404,0
+laptop,Lenovo,Legion 5,39,2,1,229.95,overheating,3,keyboard_failure,0.646,1
+laptop,HP,EliteBook 840,19,2,7,2655.83,water_damage,2,motherboard_failure,0.45,0
+phone,Apple,iPhone 11,49,1,15,1244.17,screen_damage,2,screen_damage,0.437,0
+laptop,HP,EliteBook 840,33,1,0,2247.27,overheating,3,battery_degradation,0.508,1
+tablet,Lenovo,Tab P11,10,1,7,2363.09,charging_port,3,battery_degradation,0.439,0
+tablet,Samsung,Galaxy Tab S8,33,1,29,2113.26,battery_degradation,4,water_damage,0.255,0
+laptop,Apple,MacBook Air M1,49,3,36,2692.19,motherboard_failure,3,speaker_failure,0.404,0
+phone,Xiaomi,Poco F5,36,2,0,2829.65,camera_failure,1,screen_damage,0.667,1
+tablet,Lenovo,Tab M10,37,2,14,3035.32,battery_degradation,2,screen_damage,0.439,0
+tablet,Samsung,Galaxy Tab S8,18,1,3,2258.51,touchscreen_failure,3,screen_damage,0.444,0
+laptop,Apple,MacBook Pro 14,47,2,8,450.67,overheating,4,battery_degradation,0.477,1
+phone,Apple,iPhone 12,70,2,23,2654.26,speaker_failure,2,battery_degradation,0.541,1
+laptop,Dell,Inspiron 15,44,4,7,4683.31,keyboard_failure,2,speaker_failure,0.577,1
+tablet,Lenovo,Tab M10,72,5,23,1128.79,screen_damage,3,software_issue,0.637,1
+tablet,Apple,iPad Pro 11,48,2,16,2922.8,speaker_failure,3,screen_damage,0.521,1
+phone,Xiaomi,Redmi Note 12,61,1,1,1548.87,speaker_failure,3,water_damage,0.78,1
+tablet,Apple,iPad 10,9,0,9,0.0,none,4,battery_degradation,0.122,0
+tablet,Samsung,Galaxy Tab S8,53,4,7,1397.77,charging_port,3,battery_degradation,0.796,1
+laptop,Apple,MacBook Air M1,31,2,8,1943.23,software_issue,4,keyboard_failure,0.413,0
+tablet,Lenovo,Tab P11,54,3,6,6252.7,water_damage,3,touchscreen_failure,0.693,1
+phone,Xiaomi,Poco X5,28,1,14,1111.74,speaker_failure,3,water_damage,0.371,0
+phone,Xiaomi,Poco X5,70,4,22,605.5,screen_damage,1,camera_failure,0.622,1
+laptop,Apple,MacBook Pro 14,28,0,28,0.0,none,1,screen_damage,0.218,0
+phone,Samsung,Galaxy S22,17,2,6,343.05,speaker_failure,2,screen_damage,0.488,1
+tablet,Apple,iPad Air 5,43,2,9,3943.22,speaker_failure,3,screen_damage,0.509,1
+phone,Apple,iPhone 15,33,2,11,549.63,water_damage,2,water_damage,0.497,1
+phone,Samsung,Galaxy S22,42,2,1,871.23,screen_damage,4,touchscreen_failure,0.512,1
+tablet,Apple,iPad 10,9,0,9,0.0,none,3,battery_degradation,0.09,0
+tablet,Lenovo,Tab P11,58,3,32,1661.62,charging_port,3,touchscreen_failure,0.563,1
+laptop,Apple,MacBook Air M1,62,0,62,0.0,none,4,software_issue,0.419,0
+tablet,Apple,iPad Pro 11,57,5,4,11240.83,touchscreen_failure,2,touchscreen_failure,0.716,1
+phone,Apple,iPhone 13,71,5,20,4761.3,overheating,3,speaker_failure,0.653,1
+laptop,ASUS,VivoBook 15,56,4,6,7930.96,keyboard_failure,2,battery_degradation,0.653,1
+laptop,Dell,XPS 13,53,2,21,4137.1,overheating,1,keyboard_failure,0.47,1
+laptop,Dell,Inspiron 15,33,3,23,7151.94,data_recovery,4,keyboard_failure,0.461,1
+phone,Apple,iPhone 11,12,0,12,0.0,none,3,charging_port,0.096,0
+phone,Xiaomi,Redmi Note 11,72,2,35,1648.23,battery_degradation,3,touchscreen_failure,0.474,1
+tablet,Samsung,Galaxy Tab S8,7,0,7,0.0,none,3,touchscreen_failure,0.229,0
+laptop,Apple,MacBook Pro 14,65,1,13,386.83,motherboard_failure,1,battery_degradation,0.488,1
+laptop,ASUS,ROG Strix G15,15,1,8,1435.25,keyboard_failure,1,battery_degradation,0.42,0
+tablet,Lenovo,Tab M10,4,1,1,683.18,touchscreen_failure,3,screen_damage,0.414,0
+laptop,Apple,MacBook Air M1,19,1,18,1643.36,software_issue,1,overheating,0.159,0
+phone,Xiaomi,Mi 13,28,0,28,0.0,none,4,screen_damage,0.265,0
+laptop,Lenovo,IdeaPad 5,40,2,20,3884.18,data_recovery,1,keyboard_failure,0.447,0
+phone,Apple,iPhone 12,7,0,7,0.0,none,3,battery_degradation,0.12,0
+laptop,Dell,Inspiron 15,57,2,26,1365.83,overheating,1,software_issue,0.536,1
+laptop,Dell,XPS 13,37,2,31,2634.67,motherboard_failure,2,keyboard_failure,0.347,0
+laptop,ASUS,ZenBook 14,1,0,1,0.0,none,2,battery_degradation,0.046,0
+phone,Samsung,Galaxy S23,42,2,7,38.65,screen_damage,2,screen_damage,0.601,1
+phone,Samsung,Galaxy A54,30,1,16,1396.81,screen_damage,3,speaker_failure,0.4,0
+phone,Samsung,Galaxy S21,56,2,1,2298.77,screen_damage,3,screen_damage,0.587,1
+tablet,Samsung,Galaxy Tab S8,52,5,26,3618.94,battery_degradation,3,camera_failure,0.591,1
+phone,Xiaomi,Poco F5,47,0,47,0.0,none,1,screen_damage,0.303,0
+phone,Samsung,Galaxy A54,52,1,33,196.62,screen_damage,3,charging_port,0.484,1
+phone,Samsung,Galaxy S22,10,0,10,0.0,none,1,software_issue,0.152,0
+tablet,Lenovo,Tab P11,45,2,22,3636.9,battery_degradation,2,touchscreen_failure,0.505,1
+phone,Apple,iPhone 12,33,2,12,867.5,charging_port,1,battery_degradation,0.346,0
+phone,Xiaomi,Poco F5,60,3,36,5699.08,software_issue,3,charging_port,0.59,1
+tablet,Samsung,Galaxy Tab S9,57,3,4,3516.91,battery_degradation,3,charging_port,0.728,1
+tablet,Apple,iPad Pro 11,65,2,4,1552.04,speaker_failure,1,overheating,0.607,1
+laptop,HP,Pavilion 15,12,1,9,1485.2,overheating,1,battery_degradation,0.312,0
+laptop,ASUS,VivoBook 15,25,1,10,1512.51,screen_damage,1,overheating,0.392,0
+laptop,Apple,MacBook Air M2,11,1,8,1615.32,charging_port,4,overheating,0.196,0
+laptop,ASUS,VivoBook 15,21,0,21,0.0,none,3,battery_degradation,0.178,0
+laptop,Dell,Inspiron 15,7,2,5,329.56,motherboard_failure,4,motherboard_failure,0.312,0
+laptop,HP,Omen 16,20,0,20,0.0,none,2,speaker_failure,0.167,0
+laptop,HP,Omen 16,51,3,8,4462.81,battery_degradation,3,data_recovery,0.726,1
+tablet,Samsung,Galaxy Tab S8,43,0,43,0.0,none,1,touchscreen_failure,0.378,0
+tablet,Lenovo,Tab M10,66,3,23,136.73,software_issue,2,battery_degradation,0.52,1
+laptop,Dell,XPS 13,29,2,4,774.73,speaker_failure,1,data_recovery,0.471,1
+tablet,Lenovo,Tab P11,44,1,8,1493.12,battery_degradation,2,touchscreen_failure,0.434,0
+tablet,Lenovo,Tab P11,57,1,2,1027.15,touchscreen_failure,2,battery_degradation,0.654,1
+laptop,ASUS,ROG Strix G15,58,2,14,2670.06,data_recovery,4,screen_damage,0.535,1
+phone,Samsung,Galaxy A54,57,5,29,9617.98,battery_degradation,4,charging_port,0.691,1
+phone,Apple,iPhone 15,18,0,18,0.0,none,1,screen_damage,0.215,0
+tablet,Samsung,Galaxy Tab A8,71,4,6,7114.01,charging_port,1,camera_failure,0.753,1
+laptop,Apple,MacBook Air M1,35,5,28,11316.33,screen_damage,4,overheating,0.404,0
+phone,Apple,iPhone 14,45,2,1,2074.48,camera_failure,3,touchscreen_failure,0.546,1
+phone,Samsung,Galaxy S21,48,3,14,211.41,water_damage,3,battery_degradation,0.659,1
+phone,Apple,iPhone 11,37,6,30,10441.08,speaker_failure,4,screen_damage,0.413,0
+laptop,ASUS,ZenBook 14,11,1,0,639.81,battery_degradation,4,battery_degradation,0.472,1
+phone,Samsung,Galaxy S22,39,3,7,358.12,battery_degradation,4,charging_port,0.571,1
+phone,Apple,iPhone 14,69,5,1,7899.44,screen_damage,2,software_issue,0.807,1
+laptop,Dell,XPS 13,46,0,46,0.0,none,4,software_issue,0.278,0
+phone,Xiaomi,Redmi Note 11,68,7,23,1184.39,water_damage,1,software_issue,0.714,1
+laptop,Dell,XPS 13,50,5,23,3170.63,battery_degradation,1,keyboard_failure,0.512,1
+laptop,Lenovo,Legion 5,14,0,14,0.0,none,3,overheating,0.224,0
+phone,Apple,iPhone 13,70,1,21,2033.77,screen_damage,4,overheating,0.36,0
+tablet,Samsung,Galaxy Tab S8,24,1,4,157.75,touchscreen_failure,4,screen_damage,0.492,1
+phone,Samsung,Galaxy S22,6,2,6,997.35,battery_degradation,3,software_issue,0.288,0
+tablet,Samsung,Galaxy Tab S8,61,5,16,457.76,water_damage,3,touchscreen_failure,0.746,1
+laptop,Apple,MacBook Pro 14,43,2,17,622.38,battery_degradation,4,overheating,0.397,0
+tablet,Samsung,Galaxy Tab A8,44,2,11,2481.02,screen_damage,3,water_damage,0.528,1
+phone,Xiaomi,Poco F5,11,3,6,4518.4,battery_degradation,3,camera_failure,0.569,1
+laptop,Apple,MacBook Air M1,42,2,18,1532.48,overheating,4,overheating,0.431,0
+phone,Xiaomi,Poco F5,45,3,28,317.66,software_issue,3,battery_degradation,0.599,1
+tablet,Samsung,Galaxy Tab A8,8,0,8,0.0,none,4,camera_failure,0.055,0
+laptop,ASUS,VivoBook 15,21,4,0,1427.79,battery_degradation,4,keyboard_failure,0.627,1
+phone,Apple,iPhone 11,31,1,23,905.38,camera_failure,1,charging_port,0.353,0
+tablet,Apple,iPad 10,58,1,23,930.03,touchscreen_failure,2,screen_damage,0.451,1
+tablet,Samsung,Galaxy Tab A8,41,4,17,2496.12,battery_degradation,2,touchscreen_failure,0.486,1
+laptop,ASUS,ROG Strix G15,72,10,7,6544.42,motherboard_failure,4,data_recovery,0.744,1
+phone,Xiaomi,Poco X5,63,3,12,919.78,speaker_failure,4,screen_damage,0.771,1
+phone,Xiaomi,Poco F5,12,0,12,0.0,none,3,camera_failure,0.272,0
+tablet,Samsung,Galaxy Tab S8,9,0,9,0.0,none,3,speaker_failure,0.155,0
+laptop,Lenovo,Legion 5,23,2,11,2543.78,overheating,2,motherboard_failure,0.348,0
+phone,Apple,iPhone 14,4,1,2,1385.05,battery_degradation,2,water_damage,0.277,0
+tablet,Apple,iPad Air 5,40,2,25,4997.98,software_issue,4,charging_port,0.394,0
+laptop,ASUS,ZenBook 14,17,1,10,1605.85,motherboard_failure,3,speaker_failure,0.342,0
+phone,Xiaomi,Mi 13,24,0,24,0.0,none,2,touchscreen_failure,0.324,0
+laptop,ASUS,ZenBook 14,16,1,16,382.54,overheating,3,data_recovery,0.23,0
+tablet,Apple,iPad Pro 11,67,2,18,4229.67,touchscreen_failure,3,screen_damage,0.45,1
+phone,Xiaomi,Poco X5,69,6,5,7538.6,screen_damage,2,battery_degradation,0.792,1
+phone,Xiaomi,Mi 13,44,4,36,411.94,overheating,1,battery_degradation,0.643,1
+phone,Xiaomi,Mi 13,34,1,13,1917.4,speaker_failure,1,water_damage,0.445,0
+laptop,ASUS,ROG Strix G15,39,1,30,612.19,motherboard_failure,4,motherboard_failure,0.406,0
+laptop,Dell,XPS 13,8,0,8,0.0,none,4,speaker_failure,0.072,0
+laptop,Dell,XPS 13,44,1,9,781.46,speaker_failure,3,keyboard_failure,0.539,1
+laptop,Lenovo,IdeaPad 5,66,5,35,1327.3,overheating,1,overheating,0.598,1
+laptop,Dell,XPS 13,19,0,19,0.0,none,3,motherboard_failure,0.114,0
+laptop,ASUS,ROG Strix G15,32,2,10,4067.39,water_damage,3,overheating,0.563,1
+phone,Apple,iPhone 14,66,7,29,8728.29,touchscreen_failure,1,water_damage,0.562,1
+phone,Samsung,Galaxy A54,59,3,15,1613.58,water_damage,1,battery_degradation,0.591,1
+laptop,Dell,Latitude 5530,61,2,18,2683.45,screen_damage,4,overheating,0.619,1
+phone,Samsung,Galaxy S23,52,3,23,339.32,screen_damage,2,battery_degradation,0.429,0
+laptop,ASUS,ROG Strix G15,10,0,10,0.0,none,4,motherboard_failure,0.127,0
+tablet,Samsung,Galaxy Tab S8,16,0,16,0.0,none,1,software_issue,0.106,0
+laptop,HP,EliteBook 840,72,3,23,5662.24,battery_degradation,4,overheating,0.498,1
+tablet,Apple,iPad Air 5,5,1,1,1783.98,charging_port,4,touchscreen_failure,0.377,0
+phone,Xiaomi,Mi 13,18,2,10,4656.84,battery_degradation,4,charging_port,0.42,0
+tablet,Lenovo,Tab M10,44,1,32,2070.72,screen_damage,3,screen_damage,0.376,0
+laptop,Apple,MacBook Air M2,43,1,7,2449.75,screen_damage,1,motherboard_failure,0.473,1
+tablet,Samsung,Galaxy Tab A8,30,1,23,128.39,screen_damage,4,screen_damage,0.304,0
+phone,Xiaomi,Redmi Note 12,5,0,5,0.0,none,1,camera_failure,0.19,0
+phone,Apple,iPhone 14,41,0,41,0.0,none,4,touchscreen_failure,0.239,0
+tablet,Apple,iPad Pro 11,65,2,30,4364.09,camera_failure,1,software_issue,0.497,1
+tablet,Apple,iPad 10,27,2,17,1625.25,screen_damage,4,camera_failure,0.376,0
+laptop,Lenovo,IdeaPad 5,69,6,21,8194.1,battery_degradation,3,overheating,0.71,1
+tablet,Samsung,Galaxy Tab S9,32,0,32,0.0,none,3,camera_failure,0.216,0
+phone,Samsung,Galaxy S23,27,0,27,0.0,none,4,motherboard_failure,0.273,0
+laptop,Dell,Inspiron 15,72,4,17,2877.89,screen_damage,4,data_recovery,0.673,1
+laptop,HP,Pavilion 15,38,4,2,2876.3,motherboard_failure,3,battery_degradation,0.716,1
+laptop,HP,Omen 16,62,0,62,0.0,none,3,overheating,0.343,0
+tablet,Lenovo,Tab M10,18,2,3,3078.39,software_issue,2,charging_port,0.482,1
+phone,Xiaomi,Mi 13,29,1,20,582.09,overheating,3,screen_damage,0.298,0
+tablet,Samsung,Galaxy Tab S9,18,2,0,4822.59,software_issue,2,charging_port,0.586,1
+laptop,Dell,Inspiron 15,26,3,24,7229.36,screen_damage,1,speaker_failure,0.344,0
+phone,Xiaomi,Mi 13,30,1,17,1846.72,water_damage,1,camera_failure,0.478,1
+phone,Samsung,Galaxy S22,5,0,5,0.0,none,4,camera_failure,0.224,0
+laptop,Lenovo,Legion 5,38,2,2,46.34,water_damage,1,overheating,0.587,1
+laptop,HP,EliteBook 840,70,6,33,7408.69,screen_damage,4,battery_degradation,0.738,1
+laptop,Lenovo,ThinkPad X1 Carbon,43,3,10,5483.39,overheating,2,data_recovery,0.611,1
+phone,Xiaomi,Poco X5,38,2,36,3372.01,screen_damage,4,screen_damage,0.379,0
+laptop,ASUS,ROG Strix G15,12,0,12,0.0,none,1,screen_damage,0.14,0
+phone,Apple,iPhone 14,42,3,15,51.23,water_damage,4,camera_failure,0.462,1
+laptop,HP,EliteBook 840,2,0,2,0.0,none,3,battery_degradation,0.062,0
+tablet,Apple,iPad Air 5,16,0,16,0.0,none,2,software_issue,0.123,0
+laptop,ASUS,VivoBook 15,40,6,7,9580.67,battery_degradation,3,overheating,0.78,1
+tablet,Apple,iPad Air 5,18,0,18,0.0,none,4,charging_port,0.136,0
+tablet,Lenovo,Tab M10,54,1,35,2281.99,screen_damage,2,charging_port,0.471,1
+phone,Xiaomi,Mi 13,11,1,8,1116.87,charging_port,1,screen_damage,0.429,0
+tablet,Apple,iPad Air 5,71,3,32,1516.18,water_damage,2,touchscreen_failure,0.507,1
+laptop,ASUS,ROG Strix G15,15,1,6,1792.29,screen_damage,4,screen_damage,0.373,0
+phone,Samsung,Galaxy S22,66,2,26,2283.99,battery_degradation,4,camera_failure,0.412,0
+tablet,Samsung,Galaxy Tab S8,3,0,3,0.0,none,1,touchscreen_failure,0.094,0
+tablet,Apple,iPad 10,10,1,0,1059.24,touchscreen_failure,1,charging_port,0.39,0
+phone,Samsung,Galaxy S21,37,2,26,899.91,speaker_failure,4,touchscreen_failure,0.312,0
+laptop,Dell,Inspiron 15,49,5,24,1003.12,speaker_failure,2,motherboard_failure,0.688,1
+tablet,Samsung,Galaxy Tab S9,23,1,17,982.65,touchscreen_failure,2,battery_degradation,0.249,0
+phone,Apple,iPhone 13,60,4,34,4241.28,motherboard_failure,2,battery_degradation,0.526,1
+phone,Samsung,Galaxy S23,20,3,8,1413.6,software_issue,1,battery_degradation,0.558,1
+phone,Xiaomi,Poco F5,3,0,3,0.0,none,1,water_damage,0.113,0
+phone,Xiaomi,Redmi Note 11,58,5,3,3059.18,charging_port,4,screen_damage,0.774,1
+phone,Xiaomi,Redmi Note 12,8,0,8,0.0,none,3,battery_degradation,0.118,0
+phone,Xiaomi,Mi 13,41,3,36,4484.38,screen_damage,3,battery_degradation,0.54,1
+phone,Samsung,Galaxy S22,67,1,14,1033.9,water_damage,2,water_damage,0.488,1
+tablet,Lenovo,Tab M10,72,6,31,703.26,battery_degradation,4,battery_degradation,0.619,1
+tablet,Samsung,Galaxy Tab S8,54,5,26,1865.22,software_issue,4,water_damage,0.595,1
+phone,Apple,iPhone 13,19,0,19,0.0,none,1,screen_damage,0.206,0
+tablet,Samsung,Galaxy Tab A8,72,0,72,0.0,none,4,touchscreen_failure,0.406,0
+phone,Samsung,Galaxy S22,43,3,5,6916.7,touchscreen_failure,1,battery_degradation,0.693,1
+tablet,Lenovo,Tab P11,7,0,7,0.0,none,1,charging_port,0.089,0
+phone,Apple,iPhone 15,72,3,13,3595.46,charging_port,3,battery_degradation,0.666,1
+laptop,Apple,MacBook Air M1,25,2,23,586.58,keyboard_failure,4,battery_degradation,0.383,0
+phone,Xiaomi,Mi 13,27,0,27,0.0,none,2,water_damage,0.264,0
+tablet,Samsung,Galaxy Tab A8,49,3,29,4002.38,charging_port,3,battery_degradation,0.467,1
+laptop,ASUS,ROG Strix G15,60,4,6,8028.17,motherboard_failure,3,speaker_failure,0.794,1
+phone,Samsung,Galaxy S23,53,4,2,5625.25,water_damage,2,battery_degradation,0.693,1
+phone,Samsung,Galaxy A54,54,4,18,1524.11,battery_degradation,4,speaker_failure,0.586,1
+tablet,Apple,iPad Pro 11,71,3,21,1929.95,charging_port,4,touchscreen_failure,0.589,1
+laptop,Lenovo,Legion 5,46,3,10,1049.69,battery_degradation,2,battery_degradation,0.606,1
+tablet,Lenovo,Tab P11,68,4,2,8390.68,touchscreen_failure,1,charging_port,0.698,1
+phone,Samsung,Galaxy S22,30,1,2,1767.92,water_damage,4,battery_degradation,0.385,0
+laptop,Apple,MacBook Pro 14,62,4,31,157.32,battery_degradation,4,data_recovery,0.556,1
+phone,Apple,iPhone 15,36,2,34,4887.4,screen_damage,4,software_issue,0.233,0
+phone,Apple,iPhone 11,68,2,9,1204.84,battery_degradation,3,screen_damage,0.599,1
+laptop,HP,EliteBook 840,11,0,11,0.0,none,4,battery_degradation,0.13,0
+laptop,ASUS,ZenBook 14,29,1,9,1710.1,screen_damage,1,software_issue,0.49,1
+phone,Samsung,Galaxy A34,49,3,35,3570.04,water_damage,2,overheating,0.522,1
+phone,Samsung,Galaxy A34,43,4,36,9773.29,charging_port,1,motherboard_failure,0.61,1
+phone,Apple,iPhone 15,61,2,17,232.81,charging_port,3,screen_damage,0.423,0
+tablet,Lenovo,Tab P11,23,2,10,78.29,touchscreen_failure,2,speaker_failure,0.373,0
+tablet,Samsung,Galaxy Tab S9,39,2,10,2819.79,screen_damage,4,overheating,0.525,1
+tablet,Lenovo,Tab M10,50,5,8,9881.23,software_issue,1,screen_damage,0.771,1
+tablet,Lenovo,Tab M10,7,1,1,1092.72,software_issue,3,screen_damage,0.444,0
+tablet,Lenovo,Tab M10,42,1,1,1585.31,battery_degradation,4,screen_damage,0.608,1
+laptop,Lenovo,IdeaPad 5,71,5,24,5398.1,screen_damage,4,speaker_failure,0.686,1
+phone,Xiaomi,Poco X5,32,3,4,615.29,touchscreen_failure,2,screen_damage,0.558,1
+tablet,Samsung,Galaxy Tab A8,47,6,6,1372.81,screen_damage,4,battery_degradation,0.824,1
+laptop,HP,Pavilion 15,17,0,17,0.0,none,4,motherboard_failure,0.102,0
+laptop,ASUS,VivoBook 15,66,4,26,1032.93,software_issue,1,speaker_failure,0.518,1
+tablet,Lenovo,Tab M10,50,3,0,2188.86,charging_port,1,battery_degradation,0.678,1
+tablet,Lenovo,Tab P11,67,2,10,3426.58,screen_damage,3,screen_damage,0.551,1
+laptop,HP,EliteBook 840,19,3,2,1254.06,overheating,3,screen_damage,0.484,1
+laptop,Apple,MacBook Air M2,33,1,15,1802.25,motherboard_failure,2,overheating,0.339,0
+laptop,Apple,MacBook Air M1,39,2,0,4744.12,battery_degradation,4,charging_port,0.511,1
+laptop,Dell,Inspiron 15,56,1,8,751.09,water_damage,2,battery_degradation,0.584,1
+laptop,HP,Pavilion 15,51,3,20,2185.86,battery_degradation,4,overheating,0.577,1
+tablet,Apple,iPad Pro 11,49,2,17,4082.47,charging_port,1,overheating,0.432,0
+tablet,Apple,iPad 10,70,6,11,10225.69,camera_failure,4,charging_port,0.718,1
+tablet,Apple,iPad Pro 11,38,1,4,2047.41,battery_degradation,4,speaker_failure,0.516,1
+tablet,Samsung,Galaxy Tab S9,39,2,15,1263.41,battery_degradation,4,charging_port,0.401,0
+laptop,Apple,MacBook Air M2,62,0,62,0.0,none,4,overheating,0.366,0
+tablet,Apple,iPad Pro 11,69,3,5,820.27,screen_damage,3,battery_degradation,0.608,1
+phone,Xiaomi,Mi 13,6,3,4,7377.06,screen_damage,4,charging_port,0.532,1
+laptop,Dell,XPS 13,2,0,2,0.0,none,2,charging_port,0.03,0
+tablet,Lenovo,Tab P11,58,2,23,1955.67,battery_degradation,2,software_issue,0.553,1
+laptop,Apple,MacBook Air M2,14,1,4,1039.94,keyboard_failure,1,keyboard_failure,0.429,0
+tablet,Apple,iPad Pro 11,40,6,21,6829.99,battery_degradation,4,speaker_failure,0.466,1
+laptop,Dell,XPS 13,57,0,57,0.0,none,4,software_issue,0.429,0
+laptop,Apple,MacBook Air M2,6,0,6,0.0,none,1,motherboard_failure,0.142,0
+phone,Samsung,Galaxy S21,22,3,7,3869.95,screen_damage,3,charging_port,0.512,1
+tablet,Samsung,Galaxy Tab A8,30,0,30,0.0,none,2,software_issue,0.31,0
+phone,Xiaomi,Poco F5,51,2,1,3686.94,screen_damage,4,camera_failure,0.773,1
+tablet,Samsung,Galaxy Tab A8,1,0,1,0.0,none,2,screen_damage,0.146,0
+laptop,Apple,MacBook Pro 14,14,0,14,0.0,none,2,speaker_failure,0.18,0
+laptop,HP,Pavilion 15,59,3,7,1967.65,data_recovery,3,motherboard_failure,0.759,1
+tablet,Samsung,Galaxy Tab S8,51,1,7,869.81,screen_damage,2,touchscreen_failure,0.616,1
+tablet,Lenovo,Tab M10,11,1,10,334.87,screen_damage,3,screen_damage,0.245,0
+phone,Apple,iPhone 13,19,1,16,971.16,camera_failure,4,water_damage,0.281,0
+laptop,Lenovo,IdeaPad 5,69,2,11,2774.56,motherboard_failure,2,data_recovery,0.606,1
+phone,Samsung,Galaxy A34,7,0,7,0.0,none,1,charging_port,0.208,0
+laptop,Lenovo,ThinkPad X1 Carbon,50,0,50,0.0,none,4,water_damage,0.443,0
+laptop,Dell,Inspiron 15,57,7,31,2926.94,battery_degradation,2,overheating,0.648,1
+laptop,Apple,MacBook Air M2,29,2,17,1443.35,keyboard_failure,4,keyboard_failure,0.409,0
+tablet,Lenovo,Tab P11,15,2,8,3875.57,screen_damage,3,screen_damage,0.473,1
+tablet,Apple,iPad 10,57,7,34,3824.48,software_issue,2,charging_port,0.57,1
+laptop,Apple,MacBook Air M2,34,4,22,8622.0,screen_damage,1,water_damage,0.354,0
+phone,Apple,iPhone 15,45,1,27,414.95,screen_damage,2,screen_damage,0.253,0
+phone,Apple,iPhone 15,45,3,34,2108.14,speaker_failure,3,camera_failure,0.433,0
+tablet,Samsung,Galaxy Tab A8,35,3,32,7391.16,charging_port,1,touchscreen_failure,0.461,1
+phone,Samsung,Galaxy S21,36,3,8,5260.7,charging_port,2,screen_damage,0.49,1
+tablet,Samsung,Galaxy Tab S9,51,3,31,1066.29,battery_degradation,4,speaker_failure,0.531,1
+laptop,Dell,XPS 13,12,0,12,0.0,none,3,screen_damage,0.141,0
+tablet,Samsung,Galaxy Tab A8,63,3,20,4364.67,software_issue,1,charging_port,0.657,1
+tablet,Samsung,Galaxy Tab S8,46,0,46,0.0,none,4,software_issue,0.4,0
+phone,Samsung,Galaxy S22,64,1,17,807.16,screen_damage,2,motherboard_failure,0.465,1
+tablet,Samsung,Galaxy Tab A8,7,0,7,0.0,none,4,battery_degradation,0.044,0
+phone,Apple,iPhone 12,57,2,29,3.38,overheating,2,battery_degradation,0.527,1
+tablet,Apple,iPad 10,39,4,10,8744.23,battery_degradation,1,software_issue,0.637,1
+tablet,Samsung,Galaxy Tab A8,11,0,11,0.0,none,2,touchscreen_failure,0.129,0
+phone,Samsung,Galaxy S23,30,2,13,3277.43,charging_port,1,charging_port,0.482,1
+phone,Samsung,Galaxy S21,17,1,7,1298.61,charging_port,1,charging_port,0.366,0
+tablet,Samsung,Galaxy Tab S9,55,5,8,5971.25,charging_port,1,screen_damage,0.704,1
+tablet,Apple,iPad Air 5,41,0,41,0.0,none,3,battery_degradation,0.229,0
+phone,Samsung,Galaxy S22,19,3,2,3978.81,battery_degradation,2,screen_damage,0.43,0
+laptop,HP,Omen 16,28,1,20,1870.67,battery_degradation,4,overheating,0.407,0
+phone,Apple,iPhone 11,18,4,3,5895.74,battery_degradation,4,water_damage,0.492,1
+laptop,Lenovo,ThinkPad X1 Carbon,36,1,5,620.42,keyboard_failure,3,charging_port,0.509,1
+tablet,Apple,iPad 10,39,3,13,3883.12,battery_degradation,4,battery_degradation,0.489,1
+laptop,Apple,MacBook Air M1,64,0,64,0.0,none,2,battery_degradation,0.327,0
+laptop,ASUS,ZenBook 14,68,5,0,12336.03,keyboard_failure,2,software_issue,0.937,1
+laptop,ASUS,ROG Strix G15,47,3,34,5122.07,screen_damage,1,battery_degradation,0.538,1
+phone,Xiaomi,Redmi Note 11,2,0,2,0.0,none,1,camera_failure,0.112,0
+phone,Samsung,Galaxy A54,37,3,32,5753.33,screen_damage,4,water_damage,0.42,0
+phone,Xiaomi,Mi 13,69,4,9,2774.68,screen_damage,2,battery_degradation,0.737,1
+phone,Xiaomi,Poco X5,51,2,4,1550.85,screen_damage,2,battery_degradation,0.659,1
+phone,Apple,iPhone 11,56,3,7,3400.29,charging_port,3,screen_damage,0.643,1
+tablet,Lenovo,Tab P11,16,0,16,0.0,none,2,camera_failure,0.083,0
+tablet,Apple,iPad Air 5,64,3,22,3922.54,camera_failure,3,screen_damage,0.573,1
+phone,Samsung,Galaxy S22,35,4,7,7714.3,battery_degradation,4,battery_degradation,0.523,1
+laptop,ASUS,ZenBook 14,34,3,4,3721.11,overheating,1,screen_damage,0.589,1
+laptop,ASUS,ZenBook 14,48,4,10,2551.16,battery_degradation,1,overheating,0.577,1
+phone,Xiaomi,Mi 13,1,0,1,0.0,none,1,software_issue,0.064,0
+phone,Apple,iPhone 14,47,2,24,4601.13,software_issue,1,camera_failure,0.321,0
+tablet,Lenovo,Tab M10,29,0,29,0.0,none,4,software_issue,0.209,0
+tablet,Samsung,Galaxy Tab A8,10,0,10,0.0,none,1,screen_damage,0.164,0
+tablet,Lenovo,Tab P11,23,1,7,2010.85,screen_damage,4,water_damage,0.503,1
+phone,Samsung,Galaxy S23,40,3,20,647.89,water_damage,3,charging_port,0.475,1
+phone,Samsung,Galaxy A54,39,0,39,0.0,none,2,charging_port,0.343,0
+laptop,HP,Omen 16,64,2,12,3662.32,charging_port,2,overheating,0.609,1
+phone,Apple,iPhone 14,4,0,4,0.0,none,3,screen_damage,0.02,0
+tablet,Lenovo,Tab P11,43,3,0,5691.97,camera_failure,3,camera_failure,0.64,1
+phone,Apple,iPhone 15,31,2,26,2460.14,overheating,2,camera_failure,0.217,0
+tablet,Samsung,Galaxy Tab S9,6,0,6,0.0,none,4,screen_damage,0.214,0
+tablet,Samsung,Galaxy Tab A8,11,0,11,0.0,none,2,camera_failure,0.171,0
+tablet,Samsung,Galaxy Tab S9,8,0,8,0.0,none,2,charging_port,0.127,0
+phone,Samsung,Galaxy S23,41,1,25,1751.81,speaker_failure,3,battery_degradation,0.402,0
+laptop,HP,Pavilion 15,10,2,3,680.56,screen_damage,1,overheating,0.479,1
+phone,Apple,iPhone 12,58,7,29,5495.58,water_damage,3,speaker_failure,0.514,1
+phone,Samsung,Galaxy S23,60,5,16,10656.03,screen_damage,3,screen_damage,0.635,1
+tablet,Lenovo,Tab P11,28,2,26,4282.87,charging_port,2,touchscreen_failure,0.27,0
+laptop,Dell,Latitude 5530,7,0,7,0.0,none,3,software_issue,0.17,0
+phone,Apple,iPhone 14,58,7,35,13091.37,software_issue,4,battery_degradation,0.54,1
+phone,Apple,iPhone 11,2,0,2,0.0,none,2,screen_damage,0.02,0
+phone,Apple,iPhone 14,48,4,5,5823.24,camera_failure,1,screen_damage,0.6,1
+phone,Apple,iPhone 12,57,5,8,1149.73,speaker_failure,3,charging_port,0.788,1
+phone,Apple,iPhone 14,7,0,7,0.0,none,4,charging_port,0.02,0
+tablet,Samsung,Galaxy Tab A8,4,1,3,1708.03,screen_damage,2,software_issue,0.28,0
+phone,Samsung,Galaxy S23,58,2,9,173.25,screen_damage,2,battery_degradation,0.639,1
+tablet,Samsung,Galaxy Tab A8,53,4,35,4790.31,speaker_failure,4,charging_port,0.483,1
+phone,Samsung,Galaxy S22,68,4,15,6307.54,water_damage,1,screen_damage,0.735,1
+laptop,HP,EliteBook 840,70,4,31,3440.34,motherboard_failure,3,motherboard_failure,0.613,1
+laptop,HP,Pavilion 15,4,0,4,0.0,none,2,overheating,0.084,0
+phone,Samsung,Galaxy S21,61,1,33,893.58,battery_degradation,2,water_damage,0.467,1
+phone,Apple,iPhone 12,31,5,17,6671.12,touchscreen_failure,1,water_damage,0.572,1
+phone,Xiaomi,Poco F5,46,1,11,440.25,battery_degradation,3,charging_port,0.557,1
+tablet,Apple,iPad 10,46,4,36,5636.06,charging_port,2,screen_damage,0.493,1
+laptop,ASUS,ROG Strix G15,23,2,15,189.82,software_issue,2,overheating,0.301,0
+phone,Xiaomi,Poco F5,1,0,1,0.0,none,2,camera_failure,0.121,0
+phone,Samsung,Galaxy S22,42,1,3,54.78,motherboard_failure,2,camera_failure,0.552,1
+phone,Xiaomi,Poco X5,10,0,10,0.0,none,4,speaker_failure,0.175,0
+tablet,Apple,iPad Pro 11,39,2,20,682.26,software_issue,4,charging_port,0.31,0
+tablet,Samsung,Galaxy Tab S8,41,0,41,0.0,none,3,battery_degradation,0.24,0
+phone,Xiaomi,Mi 13,23,0,23,0.0,none,3,charging_port,0.241,0
+phone,Apple,iPhone 11,51,2,36,161.91,battery_degradation,2,camera_failure,0.425,0
+tablet,Lenovo,Tab P11,64,3,9,2483.76,touchscreen_failure,3,camera_failure,0.591,1
+laptop,Lenovo,Legion 5,12,0,12,0.0,none,3,battery_degradation,0.224,0
+laptop,Apple,MacBook Air M2,27,1,7,1732.94,battery_degradation,1,screen_damage,0.347,0
+tablet,Apple,iPad Air 5,50,3,28,5494.38,speaker_failure,4,touchscreen_failure,0.544,1
+laptop,Dell,Inspiron 15,70,1,24,253.57,software_issue,2,motherboard_failure,0.446,0
+phone,Samsung,Galaxy S21,5,1,2,50.19,charging_port,1,charging_port,0.311,0
+phone,Samsung,Galaxy S22,49,2,10,3659.93,camera_failure,1,water_damage,0.571,1
+laptop,ASUS,VivoBook 15,62,6,1,6469.85,screen_damage,4,battery_degradation,0.872,1
+phone,Apple,iPhone 11,43,4,13,9743.98,camera_failure,3,charging_port,0.539,1
+tablet,Samsung,Galaxy Tab A8,31,1,6,124.09,battery_degradation,4,battery_degradation,0.469,1
+phone,Apple,iPhone 13,1,0,1,0.0,none,3,screen_damage,0.041,0
+tablet,Lenovo,Tab M10,26,0,26,0.0,none,2,battery_degradation,0.149,0
+phone,Xiaomi,Poco X5,11,1,7,2109.42,charging_port,4,screen_damage,0.358,0
+laptop,Dell,Latitude 5530,34,2,5,3209.33,screen_damage,3,battery_degradation,0.506,1
+laptop,HP,Pavilion 15,58,0,58,0.0,none,4,overheating,0.299,0
+laptop,HP,Pavilion 15,35,0,35,0.0,none,2,battery_degradation,0.288,0
+tablet,Lenovo,Tab P11,11,0,11,0.0,none,4,speaker_failure,0.189,0
+tablet,Apple,iPad 10,8,0,8,0.0,none,4,charging_port,0.158,0
+tablet,Lenovo,Tab M10,31,2,30,1494.26,screen_damage,1,touchscreen_failure,0.334,0
+tablet,Lenovo,Tab P11,16,0,16,0.0,none,4,battery_degradation,0.27,0
+phone,Apple,iPhone 12,25,2,4,213.38,camera_failure,4,overheating,0.357,0
+phone,Xiaomi,Redmi Note 12,34,0,34,0.0,none,1,battery_degradation,0.284,0
+phone,Samsung,Galaxy A54,51,4,35,3261.27,water_damage,4,battery_degradation,0.51,1
+phone,Xiaomi,Mi 13,67,3,26,843.89,water_damage,1,screen_damage,0.53,1
+phone,Xiaomi,Redmi Note 11,37,1,34,2200.34,water_damage,3,water_damage,0.461,1
+laptop,Dell,Latitude 5530,61,2,2,861.0,keyboard_failure,4,battery_degradation,0.664,1
+phone,Samsung,Galaxy S23,31,2,3,3728.75,screen_damage,3,battery_degradation,0.614,1
+phone,Samsung,Galaxy S23,40,4,17,8428.47,screen_damage,1,water_damage,0.63,1
+phone,Apple,iPhone 13,57,5,20,3367.75,screen_damage,1,charging_port,0.602,1
+phone,Samsung,Galaxy S22,53,1,31,1898.73,battery_degradation,1,battery_degradation,0.488,1
+tablet,Apple,iPad Air 5,40,2,32,2016.93,screen_damage,1,charging_port,0.406,0
+phone,Apple,iPhone 12,8,0,8,0.0,none,4,camera_failure,0.04,0
+phone,Samsung,Galaxy S22,36,4,23,8235.06,battery_degradation,1,battery_degradation,0.489,1
+tablet,Apple,iPad Air 5,48,7,31,10395.76,touchscreen_failure,4,battery_degradation,0.476,1
+tablet,Lenovo,Tab M10,45,4,10,8376.54,charging_port,1,screen_damage,0.593,1
+laptop,Apple,MacBook Air M2,7,1,2,2134.55,battery_degradation,2,battery_degradation,0.374,0
+phone,Xiaomi,Redmi Note 12,27,2,8,3257.94,screen_damage,1,battery_degradation,0.521,1
+laptop,Lenovo,Legion 5,23,1,19,2002.16,motherboard_failure,3,keyboard_failure,0.251,0
+tablet,Lenovo,Tab M10,55,4,24,8515.86,charging_port,2,screen_damage,0.567,1
+laptop,HP,Omen 16,67,3,25,4383.65,battery_degradation,3,keyboard_failure,0.451,1
+tablet,Lenovo,Tab M10,39,1,6,1204.35,software_issue,3,charging_port,0.462,1
+tablet,Samsung,Galaxy Tab A8,34,2,19,941.8,water_damage,2,battery_degradation,0.415,0
+phone,Xiaomi,Poco F5,41,6,8,10819.25,battery_degradation,3,battery_degradation,0.769,1
+laptop,Dell,Inspiron 15,50,2,2,2915.12,screen_damage,2,data_recovery,0.732,1
+laptop,Lenovo,Legion 5,69,4,30,9065.27,battery_degradation,3,keyboard_failure,0.634,1
+phone,Xiaomi,Mi 13,24,1,9,244.01,charging_port,3,battery_degradation,0.371,0
+tablet,Lenovo,Tab P11,43,1,5,555.63,charging_port,3,touchscreen_failure,0.468,1
+laptop,HP,EliteBook 840,34,4,18,4637.61,screen_damage,1,motherboard_failure,0.444,0
+tablet,Lenovo,Tab P11,61,2,12,2502.39,charging_port,4,charging_port,0.673,1
+tablet,Samsung,Galaxy Tab A8,7,0,7,0.0,none,2,water_damage,0.209,0
+phone,Apple,iPhone 13,53,4,36,8928.45,speaker_failure,2,screen_damage,0.612,1
+laptop,Lenovo,ThinkPad X1 Carbon,63,4,21,6310.33,keyboard_failure,1,water_damage,0.56,1
+phone,Samsung,Galaxy S23,27,3,24,5801.57,battery_degradation,2,screen_damage,0.4,0
+laptop,Apple,MacBook Air M1,56,4,27,4033.93,software_issue,4,water_damage,0.623,1
+phone,Apple,iPhone 15,26,3,23,2798.26,motherboard_failure,3,screen_damage,0.241,0
+tablet,Apple,iPad Air 5,1,0,1,0.0,none,2,speaker_failure,0.08,0
+phone,Xiaomi,Poco X5,40,3,8,770.31,software_issue,3,battery_degradation,0.634,1
+phone,Apple,iPhone 11,39,3,18,3419.45,charging_port,3,water_damage,0.449,0
+laptop,Lenovo,IdeaPad 5,63,3,22,5625.87,keyboard_failure,4,charging_port,0.5,1
+phone,Apple,iPhone 12,17,0,17,0.0,none,1,screen_damage,0.077,0
+tablet,Lenovo,Tab P11,16,1,11,1777.78,overheating,4,touchscreen_failure,0.397,0
+tablet,Samsung,Galaxy Tab S8,7,1,0,1654.92,screen_damage,1,software_issue,0.416,0
+phone,Xiaomi,Redmi Note 11,54,5,28,4753.17,camera_failure,4,speaker_failure,0.679,1
+tablet,Apple,iPad Air 5,2,0,2,0.0,none,1,screen_damage,0.02,0
+tablet,Lenovo,Tab M10,18,1,13,2076.63,battery_degradation,1,battery_degradation,0.253,0
+laptop,Apple,MacBook Air M1,64,1,12,1522.5,battery_degradation,2,charging_port,0.556,1
+laptop,Dell,Inspiron 15,21,1,1,1370.35,speaker_failure,4,screen_damage,0.529,1
+laptop,Lenovo,ThinkPad X1 Carbon,2,0,2,0.0,none,1,battery_degradation,0.144,0
+tablet,Lenovo,Tab M10,20,2,2,3897.63,screen_damage,1,screen_damage,0.398,0
+laptop,Lenovo,IdeaPad 5,38,1,16,1160.69,overheating,2,overheating,0.327,0
+phone,Samsung,Galaxy S23,41,4,27,7385.4,charging_port,1,screen_damage,0.424,0
+phone,Apple,iPhone 12,43,4,22,8945.28,screen_damage,3,software_issue,0.573,1
+tablet,Apple,iPad Pro 11,44,3,11,853.74,screen_damage,4,touchscreen_failure,0.508,1
+laptop,Dell,Latitude 5530,62,6,26,9732.7,data_recovery,1,overheating,0.709,1
+phone,Xiaomi,Redmi Note 11,21,1,3,1040.07,screen_damage,4,water_damage,0.498,1
+phone,Xiaomi,Poco F5,46,0,46,0.0,none,2,camera_failure,0.402,0
+laptop,Dell,XPS 13,53,1,28,114.93,screen_damage,3,battery_degradation,0.367,0
+phone,Xiaomi,Mi 13,29,1,21,2182.86,screen_damage,1,speaker_failure,0.374,0
+laptop,Lenovo,IdeaPad 5,45,0,45,0.0,none,4,overheating,0.358,0
+phone,Xiaomi,Mi 13,7,1,0,1608.5,screen_damage,4,battery_degradation,0.366,0
+laptop,Lenovo,ThinkPad X1 Carbon,63,5,20,3011.15,software_issue,1,keyboard_failure,0.777,1
+tablet,Apple,iPad 10,49,2,25,4085.52,charging_port,4,battery_degradation,0.311,0
+tablet,Samsung,Galaxy Tab S9,64,2,28,1580.31,screen_damage,1,software_issue,0.596,1
+phone,Samsung,Galaxy A34,5,0,5,0.0,none,1,motherboard_failure,0.136,0
+phone,Xiaomi,Mi 13,39,4,32,5623.33,speaker_failure,4,water_damage,0.576,1
+laptop,HP,Pavilion 15,29,0,29,0.0,none,3,keyboard_failure,0.314,0
+tablet,Lenovo,Tab M10,47,4,28,1140.23,battery_degradation,2,battery_degradation,0.587,1
+phone,Samsung,Galaxy S23,38,0,38,0.0,none,3,camera_failure,0.3,0
+tablet,Apple,iPad Air 5,22,2,15,702.25,screen_damage,4,touchscreen_failure,0.378,0
+phone,Samsung,Galaxy A54,26,2,6,603.73,water_damage,2,water_damage,0.55,1
+laptop,Lenovo,Legion 5,44,1,6,1892.87,motherboard_failure,1,data_recovery,0.429,0
+laptop,Dell,Latitude 5530,65,4,8,9638.55,software_issue,1,overheating,0.634,1
+tablet,Samsung,Galaxy Tab S8,62,1,32,1952.7,screen_damage,2,charging_port,0.532,1
+tablet,Apple,iPad Air 5,50,2,20,2520.55,battery_degradation,2,battery_degradation,0.41,0
+laptop,Dell,Inspiron 15,38,0,38,0.0,none,2,battery_degradation,0.281,0
+phone,Samsung,Galaxy A54,66,5,19,10538.43,charging_port,3,motherboard_failure,0.701,1
+tablet,Lenovo,Tab P11,26,2,6,3120.84,software_issue,3,software_issue,0.438,0
+tablet,Apple,iPad 10,23,2,16,2712.46,screen_damage,1,software_issue,0.359,0
+laptop,ASUS,ROG Strix G15,54,2,34,1429.64,battery_degradation,1,overheating,0.539,1
+tablet,Apple,iPad Air 5,49,3,9,397.99,screen_damage,3,battery_degradation,0.481,1
+phone,Samsung,Galaxy S23,19,3,1,5179.46,software_issue,1,speaker_failure,0.496,1
+laptop,Dell,XPS 13,72,4,14,7424.13,overheating,2,overheating,0.696,1
+tablet,Lenovo,Tab M10,7,0,7,0.0,none,4,software_issue,0.22,0
+laptop,HP,Omen 16,7,0,7,0.0,none,3,battery_degradation,0.038,0
+phone,Xiaomi,Poco F5,29,6,29,9506.83,battery_degradation,3,screen_damage,0.587,1
+tablet,Lenovo,Tab P11,25,0,25,0.0,none,2,screen_damage,0.184,0
+tablet,Apple,iPad Air 5,23,3,23,3853.85,speaker_failure,4,touchscreen_failure,0.299,0
+laptop,ASUS,ROG Strix G15,17,0,17,0.0,none,3,motherboard_failure,0.117,0
+phone,Samsung,Galaxy A34,20,0,20,0.0,none,3,battery_degradation,0.108,0
+tablet,Apple,iPad 10,39,3,31,5924.31,software_issue,1,screen_damage,0.405,0
+tablet,Samsung,Galaxy Tab S8,29,0,29,0.0,none,1,screen_damage,0.336,0
+tablet,Apple,iPad Pro 11,70,4,34,4034.17,battery_degradation,2,charging_port,0.52,1
+tablet,Samsung,Galaxy Tab A8,47,1,18,546.11,battery_degradation,4,speaker_failure,0.486,1
+tablet,Lenovo,Tab P11,15,1,11,1114.17,charging_port,2,screen_damage,0.414,0
+phone,Xiaomi,Poco X5,49,2,7,1929.38,screen_damage,3,speaker_failure,0.645,1
+phone,Xiaomi,Poco X5,66,8,32,8911.14,overheating,2,charging_port,0.609,1
+laptop,ASUS,ZenBook 14,13,0,13,0.0,none,1,keyboard_failure,0.098,0
+tablet,Apple,iPad Air 5,28,1,27,1713.51,touchscreen_failure,2,overheating,0.307,0
+tablet,Lenovo,Tab M10,10,0,10,0.0,none,2,speaker_failure,0.199,0
+phone,Samsung,Galaxy S23,5,3,0,549.36,motherboard_failure,3,camera_failure,0.411,0
+tablet,Apple,iPad 10,30,0,30,0.0,none,4,charging_port,0.282,0
+laptop,Dell,Latitude 5530,52,4,27,3164.04,screen_damage,1,data_recovery,0.538,1
+tablet,Apple,iPad 10,9,0,9,0.0,none,1,screen_damage,0.146,0
+tablet,Apple,iPad Pro 11,65,0,65,0.0,none,3,battery_degradation,0.271,0
+tablet,Apple,iPad Pro 11,57,3,24,2963.35,battery_degradation,4,speaker_failure,0.517,1
+phone,Xiaomi,Redmi Note 12,18,1,12,1991.93,battery_degradation,3,screen_damage,0.46,1
+tablet,Apple,iPad Pro 11,48,2,0,2767.62,battery_degradation,1,battery_degradation,0.601,1
+phone,Apple,iPhone 15,51,2,34,2737.63,camera_failure,2,battery_degradation,0.322,0
+tablet,Lenovo,Tab M10,28,4,13,9056.28,battery_degradation,2,software_issue,0.602,1
+phone,Apple,iPhone 12,33,1,12,286.56,battery_degradation,1,water_damage,0.399,0
+tablet,Samsung,Galaxy Tab S8,71,3,4,2179.9,charging_port,1,battery_degradation,0.63,1
+phone,Xiaomi,Mi 13,63,1,21,892.85,screen_damage,2,software_issue,0.559,1
+phone,Samsung,Galaxy A54,9,0,9,0.0,none,3,motherboard_failure,0.225,0
+laptop,Dell,Inspiron 15,40,3,9,4241.64,data_recovery,3,overheating,0.548,1
+laptop,Lenovo,ThinkPad X1 Carbon,41,5,15,9820.75,keyboard_failure,4,screen_damage,0.672,1
+laptop,HP,Pavilion 15,43,2,30,2314.24,overheating,3,software_issue,0.387,0
+laptop,ASUS,ZenBook 14,23,0,23,0.0,none,1,battery_degradation,0.244,0
+laptop,Lenovo,Legion 5,26,0,26,0.0,none,1,speaker_failure,0.183,0
+tablet,Apple,iPad Air 5,65,6,1,12189.64,touchscreen_failure,2,screen_damage,0.807,1
+phone,Xiaomi,Poco X5,70,4,34,4721.04,screen_damage,3,camera_failure,0.705,1
+laptop,Lenovo,Legion 5,38,0,38,0.0,none,1,keyboard_failure,0.217,0
+laptop,HP,Omen 16,2,0,2,0.0,none,2,battery_degradation,0.143,0
+tablet,Apple,iPad Pro 11,21,1,5,1415.89,battery_degradation,2,battery_degradation,0.376,0
+tablet,Lenovo,Tab M10,46,1,2,547.05,software_issue,1,water_damage,0.561,1
+laptop,HP,Pavilion 15,6,0,6,0.0,none,3,motherboard_failure,0.164,0
+laptop,Dell,Inspiron 15,6,1,0,2451.47,keyboard_failure,3,overheating,0.345,0
+tablet,Samsung,Galaxy Tab S8,70,4,36,1738.5,camera_failure,3,speaker_failure,0.631,1
+tablet,Lenovo,Tab P11,67,5,16,4704.11,charging_port,4,software_issue,0.798,1
+laptop,HP,EliteBook 840,62,4,0,5018.37,overheating,2,motherboard_failure,0.728,1
+phone,Apple,iPhone 15,36,3,13,1126.8,charging_port,1,charging_port,0.403,0
+tablet,Apple,iPad Pro 11,43,5,7,6018.96,water_damage,2,software_issue,0.652,1
+tablet,Apple,iPad 10,53,4,1,2436.7,battery_degradation,2,battery_degradation,0.632,1
+phone,Xiaomi,Mi 13,6,2,4,734.33,camera_failure,2,charging_port,0.38,0
+tablet,Samsung,Galaxy Tab S8,3,1,2,2368.13,battery_degradation,4,screen_damage,0.292,0
+laptop,Lenovo,ThinkPad X1 Carbon,53,3,9,5959.62,charging_port,2,battery_degradation,0.704,1
+tablet,Lenovo,Tab M10,22,3,21,2570.03,software_issue,1,speaker_failure,0.376,0
+phone,Samsung,Galaxy A34,17,2,3,82.81,charging_port,4,camera_failure,0.465,1
+phone,Xiaomi,Redmi Note 11,23,1,15,2254.02,speaker_failure,1,charging_port,0.41,0
+phone,Samsung,Galaxy S22,70,3,0,6727.27,battery_degradation,4,battery_degradation,0.805,1
+tablet,Samsung,Galaxy Tab A8,6,1,5,1324.54,speaker_failure,4,battery_degradation,0.284,0
+laptop,HP,Omen 16,13,1,6,334.71,charging_port,2,software_issue,0.36,0
+phone,Samsung,Galaxy A54,70,0,70,0.0,none,2,water_damage,0.382,0
+phone,Xiaomi,Redmi Note 11,67,2,7,2598.81,battery_degradation,2,battery_degradation,0.667,1
+tablet,Samsung,Galaxy Tab A8,47,3,6,1160.84,screen_damage,3,software_issue,0.665,1
+laptop,ASUS,ROG Strix G15,47,3,17,7438.49,battery_degradation,2,keyboard_failure,0.523,1
+laptop,ASUS,VivoBook 15,62,5,11,4627.66,data_recovery,3,battery_degradation,0.769,1
+laptop,ASUS,ROG Strix G15,51,2,8,4274.99,water_damage,2,battery_degradation,0.62,1
+laptop,Lenovo,ThinkPad X1 Carbon,28,1,16,1001.4,water_damage,1,battery_degradation,0.324,0
+phone,Samsung,Galaxy S21,12,0,12,0.0,none,4,camera_failure,0.225,0
+tablet,Samsung,Galaxy Tab S9,9,1,4,554.43,battery_degradation,1,battery_degradation,0.278,0
+tablet,Samsung,Galaxy Tab A8,67,3,18,5337.04,battery_degradation,2,touchscreen_failure,0.619,1
+tablet,Samsung,Galaxy Tab A8,2,1,0,2126.42,screen_damage,3,screen_damage,0.446,0
+phone,Apple,iPhone 15,66,3,33,5238.37,water_damage,1,water_damage,0.523,1
+laptop,Lenovo,Legion 5,1,0,1,0.0,none,1,battery_degradation,0.2,0
+laptop,Dell,Inspiron 15,51,5,25,7326.0,overheating,1,screen_damage,0.609,1
+phone,Xiaomi,Poco X5,72,3,22,2606.06,touchscreen_failure,2,camera_failure,0.68,1
+tablet,Apple,iPad Pro 11,52,4,36,46.51,battery_degradation,1,screen_damage,0.445,0
+tablet,Apple,iPad 10,38,2,21,4735.08,water_damage,3,battery_degradation,0.426,0
+tablet,Lenovo,Tab M10,57,4,24,5631.69,screen_damage,3,charging_port,0.639,1
+laptop,Dell,Latitude 5530,4,0,4,0.0,none,3,data_recovery,0.116,0
+phone,Samsung,Galaxy S22,30,2,25,1578.65,battery_degradation,1,camera_failure,0.441,0
+tablet,Samsung,Galaxy Tab S9,37,0,37,0.0,none,3,touchscreen_failure,0.204,0
+phone,Xiaomi,Redmi Note 12,61,4,20,3535.38,screen_damage,3,software_issue,0.762,1
+phone,Xiaomi,Redmi Note 12,64,1,12,587.15,screen_damage,3,screen_damage,0.548,1
+phone,Apple,iPhone 12,32,1,22,389.99,screen_damage,1,charging_port,0.198,0
+tablet,Lenovo,Tab M10,1,0,1,0.0,none,1,touchscreen_failure,0.158,0
+laptop,HP,Omen 16,41,1,31,2245.3,speaker_failure,3,charging_port,0.431,0
+laptop,Lenovo,Legion 5,36,4,25,2220.93,motherboard_failure,1,data_recovery,0.495,1
+tablet,Samsung,Galaxy Tab A8,70,3,2,3768.56,water_damage,2,touchscreen_failure,0.712,1
+laptop,Apple,MacBook Pro 14,67,6,29,4734.77,motherboard_failure,2,overheating,0.502,1
+laptop,ASUS,ZenBook 14,42,3,23,4595.84,speaker_failure,3,battery_degradation,0.42,0
+phone,Samsung,Galaxy A34,44,3,23,1379.35,battery_degradation,4,charging_port,0.463,1
+tablet,Samsung,Galaxy Tab A8,52,1,17,1126.82,water_damage,2,screen_damage,0.483,1
+phone,Xiaomi,Poco X5,31,3,27,6422.32,screen_damage,2,screen_damage,0.394,0
+laptop,Apple,MacBook Air M1,54,1,31,336.18,motherboard_failure,3,software_issue,0.449,0
+laptop,HP,EliteBook 840,72,3,36,357.82,overheating,2,overheating,0.47,1
+phone,Apple,iPhone 13,61,4,6,4498.55,speaker_failure,3,battery_degradation,0.667,1
+laptop,ASUS,VivoBook 15,33,3,22,148.77,screen_damage,2,speaker_failure,0.356,0
+tablet,Lenovo,Tab P11,37,1,22,812.73,battery_degradation,4,charging_port,0.354,0
+phone,Samsung,Galaxy A54,37,1,29,1579.28,software_issue,2,water_damage,0.264,0
+tablet,Samsung,Galaxy Tab A8,52,5,4,988.9,touchscreen_failure,3,screen_damage,0.745,1
+laptop,HP,Omen 16,35,2,25,1356.24,battery_degradation,3,battery_degradation,0.364,0
+tablet,Lenovo,Tab M10,53,3,10,1379.15,screen_damage,2,screen_damage,0.536,1
+tablet,Samsung,Galaxy Tab S8,11,0,11,0.0,none,4,camera_failure,0.097,0
+phone,Apple,iPhone 11,61,2,35,269.13,screen_damage,1,charging_port,0.504,1
+phone,Samsung,Galaxy A54,20,1,2,1637.08,screen_damage,3,battery_degradation,0.51,1
+phone,Apple,iPhone 13,57,3,8,984.58,charging_port,1,battery_degradation,0.686,1
+phone,Xiaomi,Poco X5,42,4,30,4671.93,charging_port,3,battery_degradation,0.634,1
+tablet,Samsung,Galaxy Tab S9,70,4,11,5908.31,screen_damage,4,battery_degradation,0.7,1
+tablet,Lenovo,Tab M10,45,2,30,2698.34,battery_degradation,4,camera_failure,0.486,1
+laptop,HP,EliteBook 840,34,1,9,758.93,keyboard_failure,2,battery_degradation,0.345,0
+laptop,HP,EliteBook 840,69,3,0,5158.27,motherboard_failure,4,motherboard_failure,0.748,1
+laptop,Apple,MacBook Air M2,38,1,14,1991.92,data_recovery,2,screen_damage,0.383,0
+laptop,ASUS,ROG Strix G15,51,6,15,2449.04,overheating,4,software_issue,0.727,1
+laptop,Lenovo,IdeaPad 5,11,1,6,1563.31,battery_degradation,3,keyboard_failure,0.358,0
+laptop,ASUS,ROG Strix G15,53,3,12,6401.12,software_issue,3,keyboard_failure,0.551,1
+phone,Xiaomi,Poco F5,58,2,17,3502.36,water_damage,3,screen_damage,0.597,1
+phone,Apple,iPhone 11,69,6,1,2789.06,battery_degradation,3,battery_degradation,0.712,1
+phone,Xiaomi,Poco F5,2,0,2,0.0,none,2,battery_degradation,0.107,0
+phone,Samsung,Galaxy S22,44,4,26,3115.77,screen_damage,3,water_damage,0.58,1
+laptop,Apple,MacBook Air M2,11,0,11,0.0,none,2,battery_degradation,0.174,0
+phone,Samsung,Galaxy A34,10,2,8,2350.73,screen_damage,3,camera_failure,0.322,0
+laptop,Apple,MacBook Air M1,32,4,24,7712.25,battery_degradation,1,motherboard_failure,0.399,0
+phone,Samsung,Galaxy S21,67,3,13,3546.19,software_issue,3,camera_failure,0.678,1
+laptop,Lenovo,Legion 5,6,1,5,2343.55,screen_damage,3,motherboard_failure,0.343,0
+laptop,HP,Pavilion 15,47,3,3,6477.43,keyboard_failure,1,data_recovery,0.604,1
+phone,Xiaomi,Poco F5,42,1,0,418.4,battery_degradation,1,screen_damage,0.565,1
+laptop,Lenovo,ThinkPad X1 Carbon,6,0,6,0.0,none,4,keyboard_failure,0.146,0
+tablet,Lenovo,Tab P11,48,3,5,1865.42,software_issue,3,battery_degradation,0.648,1
+tablet,Apple,iPad Air 5,46,5,9,8766.6,water_damage,2,touchscreen_failure,0.713,1
+laptop,Lenovo,IdeaPad 5,72,2,22,4027.63,motherboard_failure,2,overheating,0.504,1
+phone,Xiaomi,Poco F5,46,4,8,2506.96,camera_failure,4,screen_damage,0.621,1
+tablet,Samsung,Galaxy Tab S8,63,2,12,2833.51,charging_port,3,screen_damage,0.609,1
+tablet,Samsung,Galaxy Tab A8,71,1,10,172.19,camera_failure,3,battery_degradation,0.498,1
+laptop,ASUS,ROG Strix G15,59,1,0,1939.79,motherboard_failure,2,overheating,0.646,1
+phone,Xiaomi,Poco X5,31,6,20,10815.05,screen_damage,4,charging_port,0.62,1
+phone,Xiaomi,Poco F5,71,1,9,1532.6,overheating,3,battery_degradation,0.59,1
+phone,Apple,iPhone 15,9,1,0,2087.98,software_issue,1,overheating,0.271,0
+phone,Apple,iPhone 14,25,0,25,0.0,none,4,screen_damage,0.095,0
+tablet,Samsung,Galaxy Tab S8,33,1,3,915.89,screen_damage,1,battery_degradation,0.511,1
+phone,Apple,iPhone 14,11,1,7,2002.55,battery_degradation,4,water_damage,0.209,0
+laptop,Apple,MacBook Pro 14,35,1,33,101.63,data_recovery,3,motherboard_failure,0.189,0
+phone,Apple,iPhone 15,13,1,1,1812.93,speaker_failure,2,water_damage,0.363,0
+phone,Xiaomi,Redmi Note 12,23,3,17,5618.96,charging_port,1,overheating,0.456,1
+tablet,Lenovo,Tab M10,59,4,27,8828.24,touchscreen_failure,2,water_damage,0.528,1
+tablet,Samsung,Galaxy Tab S8,44,3,10,4004.25,overheating,3,overheating,0.607,1
+laptop,ASUS,ROG Strix G15,48,4,26,7641.84,keyboard_failure,3,motherboard_failure,0.526,1
+tablet,Apple,iPad 10,70,4,13,3750.63,software_issue,3,software_issue,0.652,1
+laptop,Dell,Inspiron 15,51,2,0,3631.57,motherboard_failure,1,screen_damage,0.752,1
+tablet,Apple,iPad Pro 11,1,0,1,0.0,none,2,software_issue,0.02,0
+phone,Samsung,Galaxy S21,36,3,35,3834.54,screen_damage,2,camera_failure,0.444,0
+phone,Apple,iPhone 14,46,6,9,2076.12,battery_degradation,2,screen_damage,0.628,1
+phone,Samsung,Galaxy S23,12,1,9,999.5,touchscreen_failure,1,charging_port,0.419,0
+tablet,Samsung,Galaxy Tab A8,23,1,15,2064.26,screen_damage,1,screen_damage,0.378,0
+tablet,Lenovo,Tab M10,5,0,5,0.0,none,4,screen_damage,0.171,0
+phone,Apple,iPhone 13,45,4,27,4165.22,software_issue,2,software_issue,0.549,1
+tablet,Lenovo,Tab P11,49,2,3,1523.92,speaker_failure,2,overheating,0.528,1
+laptop,ASUS,VivoBook 15,29,0,29,0.0,none,4,software_issue,0.176,0
+laptop,ASUS,VivoBook 15,65,4,5,2220.86,overheating,4,battery_degradation,0.716,1
+phone,Apple,iPhone 13,11,4,7,5714.41,battery_degradation,4,screen_damage,0.357,0
+laptop,Apple,MacBook Air M2,65,2,27,3869.13,overheating,2,battery_degradation,0.376,0
+laptop,ASUS,ZenBook 14,63,1,25,1630.62,water_damage,2,data_recovery,0.389,0
+phone,Apple,iPhone 13,56,4,20,6847.38,battery_degradation,1,screen_damage,0.579,1
+tablet,Samsung,Galaxy Tab A8,47,1,22,476.22,battery_degradation,1,touchscreen_failure,0.371,0
+laptop,Lenovo,IdeaPad 5,57,1,9,1101.16,charging_port,2,battery_degradation,0.645,1
+phone,Xiaomi,Poco X5,20,1,2,280.93,screen_damage,2,screen_damage,0.394,0
+laptop,Apple,MacBook Air M2,15,1,9,1125.15,screen_damage,2,charging_port,0.205,0
+tablet,Lenovo,Tab P11,27,0,27,0.0,none,3,touchscreen_failure,0.244,0
+tablet,Samsung,Galaxy Tab S8,19,1,0,941.52,touchscreen_failure,1,battery_degradation,0.526,1
+laptop,Lenovo,ThinkPad X1 Carbon,37,1,12,1972.97,keyboard_failure,1,overheating,0.459,1
+laptop,Apple,MacBook Air M1,50,1,17,1657.45,keyboard_failure,3,keyboard_failure,0.491,1
+phone,Apple,iPhone 13,50,5,14,12247.41,charging_port,1,speaker_failure,0.635,1
+laptop,Dell,Latitude 5530,69,6,5,2796.26,screen_damage,4,charging_port,0.808,1
+tablet,Lenovo,Tab P11,6,0,6,0.0,none,3,speaker_failure,0.079,0
+laptop,Dell,Inspiron 15,21,1,0,866.95,keyboard_failure,3,data_recovery,0.425,0
+phone,Xiaomi,Poco X5,8,0,8,0.0,none,4,screen_damage,0.215,0
+phone,Xiaomi,Poco X5,29,1,4,854.47,charging_port,2,charging_port,0.49,1
+phone,Xiaomi,Poco F5,67,4,14,4173.33,water_damage,4,screen_damage,0.748,1
+laptop,ASUS,ROG Strix G15,58,2,34,658.86,overheating,2,overheating,0.52,1
+phone,Samsung,Galaxy A54,18,1,13,2489.21,touchscreen_failure,2,motherboard_failure,0.427,0
+tablet,Lenovo,Tab P11,41,1,4,1393.35,battery_degradation,1,speaker_failure,0.611,1
+phone,Samsung,Galaxy S22,4,0,4,0.0,none,4,screen_damage,0.173,0
+laptop,HP,EliteBook 840,36,3,9,5843.31,motherboard_failure,2,overheating,0.476,1
+phone,Xiaomi,Mi 13,35,2,14,2981.8,battery_degradation,1,screen_damage,0.455,1
+laptop,Apple,MacBook Pro 14,62,5,8,6279.06,keyboard_failure,3,battery_degradation,0.754,1
+phone,Samsung,Galaxy A34,61,2,8,818.93,battery_degradation,4,screen_damage,0.579,1
+phone,Samsung,Galaxy A34,29,2,23,3356.7,charging_port,2,camera_failure,0.294,0
+phone,Apple,iPhone 14,63,3,20,6500.81,overheating,4,camera_failure,0.611,1
+laptop,Apple,MacBook Pro 14,49,2,20,1970.75,battery_degradation,1,overheating,0.516,1
+tablet,Apple,iPad Pro 11,59,5,2,10972.25,screen_damage,4,screen_damage,0.727,1
+tablet,Apple,iPad 10,50,3,33,5738.7,screen_damage,2,charging_port,0.543,1
+laptop,Dell,Inspiron 15,39,1,18,1153.37,data_recovery,1,battery_degradation,0.379,0
+tablet,Lenovo,Tab P11,60,2,28,452.2,battery_degradation,2,speaker_failure,0.5,1
+tablet,Lenovo,Tab P11,51,2,26,1617.3,software_issue,4,battery_degradation,0.36,0
+tablet,Lenovo,Tab P11,59,4,5,2500.82,screen_damage,2,speaker_failure,0.792,1
+tablet,Lenovo,Tab P11,12,1,1,1765.57,battery_degradation,1,battery_degradation,0.428,0
+tablet,Lenovo,Tab M10,66,2,10,1893.39,water_damage,2,battery_degradation,0.593,1
+laptop,ASUS,VivoBook 15,20,2,5,4344.09,charging_port,1,speaker_failure,0.394,0
+laptop,HP,EliteBook 840,58,5,18,7830.66,data_recovery,2,data_recovery,0.614,1
+phone,Apple,iPhone 15,33,3,0,3439.82,screen_damage,1,battery_degradation,0.636,1
+tablet,Samsung,Galaxy Tab S9,28,1,18,1648.68,speaker_failure,4,water_damage,0.331,0
+phone,Xiaomi,Mi 13,1,0,1,0.0,none,3,battery_degradation,0.104,0
+tablet,Lenovo,Tab P11,7,1,2,370.64,screen_damage,1,screen_damage,0.399,0
+phone,Apple,iPhone 15,39,1,21,2300.96,motherboard_failure,4,battery_degradation,0.23,0
+phone,Apple,iPhone 13,72,6,11,14494.4,touchscreen_failure,3,speaker_failure,0.758,1
+phone,Apple,iPhone 13,42,1,23,2243.82,screen_damage,4,screen_damage,0.382,0
+tablet,Apple,iPad Pro 11,61,6,8,1830.35,software_issue,3,battery_degradation,0.805,1
+tablet,Samsung,Galaxy Tab S8,27,0,27,0.0,none,1,screen_damage,0.274,0
+phone,Xiaomi,Mi 13,12,0,12,0.0,none,3,battery_degradation,0.207,0
+laptop,ASUS,ROG Strix G15,34,1,33,1437.86,data_recovery,2,screen_damage,0.345,0
+tablet,Lenovo,Tab M10,67,4,31,4925.04,screen_damage,2,screen_damage,0.536,1
+tablet,Samsung,Galaxy Tab S9,1,0,1,0.0,none,4,camera_failure,0.029,0
+tablet,Apple,iPad 10,27,2,25,3076.54,water_damage,1,speaker_failure,0.268,0
+laptop,HP,Omen 16,28,3,0,4804.64,overheating,3,battery_degradation,0.628,1
+phone,Samsung,Galaxy S23,65,4,35,3239.24,screen_damage,3,overheating,0.501,1
+laptop,Dell,Latitude 5530,4,0,4,0.0,none,2,battery_degradation,0.186,0
+laptop,HP,Omen 16,62,2,30,3986.27,motherboard_failure,4,screen_damage,0.529,1
+phone,Xiaomi,Poco F5,69,1,21,1156.18,charging_port,1,battery_degradation,0.588,1
+tablet,Samsung,Galaxy Tab S8,41,5,35,6698.57,battery_degradation,3,screen_damage,0.497,1
+laptop,Apple,MacBook Air M1,36,0,36,0.0,none,3,motherboard_failure,0.298,0
+laptop,ASUS,ZenBook 14,50,3,11,4463.94,screen_damage,3,keyboard_failure,0.681,1
+tablet,Samsung,Galaxy Tab S8,5,1,2,1034.67,charging_port,2,battery_degradation,0.358,0
+laptop,Dell,Inspiron 15,28,2,16,1511.59,overheating,1,battery_degradation,0.329,0
+phone,Apple,iPhone 14,65,4,1,7990.25,speaker_failure,2,speaker_failure,0.823,1
+phone,Samsung,Galaxy A34,68,4,19,7755.33,touchscreen_failure,1,water_damage,0.57,1
+tablet,Lenovo,Tab P11,27,1,23,91.38,charging_port,1,battery_degradation,0.271,0
+phone,Samsung,Galaxy S21,12,0,12,0.0,none,1,water_damage,0.127,0
+phone,Xiaomi,Poco X5,3,1,2,1597.13,camera_failure,2,screen_damage,0.34,0
+phone,Samsung,Galaxy S23,69,4,20,7727.87,screen_damage,3,battery_degradation,0.668,1
+phone,Apple,iPhone 13,15,1,0,2395.75,speaker_failure,1,speaker_failure,0.387,0
+phone,Xiaomi,Poco X5,71,3,20,2032.89,battery_degradation,3,battery_degradation,0.722,1
+tablet,Apple,iPad Air 5,10,1,4,1533.16,screen_damage,4,battery_degradation,0.284,0
+phone,Apple,iPhone 11,61,1,3,264.82,speaker_failure,4,screen_damage,0.486,1
+laptop,Lenovo,Legion 5,58,3,22,2343.3,overheating,1,screen_damage,0.62,1
+laptop,ASUS,ZenBook 14,12,2,12,4598.45,software_issue,4,speaker_failure,0.354,0
+laptop,Dell,Inspiron 15,30,3,30,1678.46,data_recovery,3,screen_damage,0.472,1
+laptop,Dell,XPS 13,43,4,20,4532.83,charging_port,4,screen_damage,0.454,1
+phone,Samsung,Galaxy A34,60,4,10,2822.57,speaker_failure,2,charging_port,0.686,1
+tablet,Apple,iPad Pro 11,14,1,5,1390.37,touchscreen_failure,3,battery_degradation,0.243,0
+tablet,Samsung,Galaxy Tab A8,53,0,53,0.0,none,2,battery_degradation,0.313,0
+tablet,Apple,iPad Pro 11,50,0,50,0.0,none,2,overheating,0.213,0
