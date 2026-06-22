@@ -42,6 +42,7 @@ app.use('/api/users', require('./routes/users'));
 app.use('/api/devices', require('./routes/devices'));
 app.use('/api/orders', require('./routes/orders'));
 app.use('/api/parts', require('./routes/parts'));
+app.use('/api/repair-types', require('./routes/repairTypes'));
 app.use('/api/analytics', require('./routes/analytics'));
 app.use('/api/predictions', require('./routes/predictions'));
 app.use('/api/notifications', require('./routes/notifications'));

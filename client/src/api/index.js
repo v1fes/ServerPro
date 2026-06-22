@@ -90,6 +90,11 @@ export const partsAPI = {
   getLowStock: () => api.get('/parts/low-stock'),
 };
 
+// Repair types API
+export const repairTypesAPI = {
+  getAll: () => api.get('/repair-types'),
+};
+
 // Analytics API
 export const analyticsAPI = {
   getDashboard: () => api.get('/analytics/dashboard'),

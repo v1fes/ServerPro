@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Card, Descriptions, Tag, Timeline, Select, Button, Input, Space, Typography, Spin, Table, Divider, message } from 'antd';
-import { ordersAPI, partsAPI, predictionsAPI } from '../../api';
+import { Card, Descriptions, Tag, Timeline, Select, Button, Input, InputNumber, Space, Typography, Spin, Table, Divider, message } from 'antd';
+import { ordersAPI, partsAPI, predictionsAPI, repairTypesAPI } from '../../api';
 import { STATUS_LABELS, STATUS_TAG_COLORS, DEVICE_TYPE_LABELS } from '../../utils/constants';
 
 const { Title, Text, Paragraph } = Typography;
@@ -19,6 +19,10 @@ const MasterOrderDetail = () => {
   const [predicting, setPredicting] = useState(false);
   const [parts, setParts] = useState([]);
   const [selectedPart, setSelectedPart] = useState(null);
+  const [repairTypes, setRepairTypes] = useState([]);
+  const [selectedRepairType, setSelectedRepairType] = useState(null);
+  const [repairCost, setRepairCost] = useState(null);
+  const [addingRepair, setAddingRepair] = useState(false);
 
   const fetchOrder = async () => {
     try {
@@ -35,6 +39,7 @@ const MasterOrderDetail = () => {
   useEffect(() => {
     fetchOrder();
     partsAPI.getAll({ limit: 100 }).then(({ data }) => setParts(data.parts)).catch(() => {});
+    repairTypesAPI.getAll().then(({ data }) => setRepairTypes(data.repairTypes)).catch(() => {});
   }, [id]);
 
   const handleStatusChange = async () => {
@@ -68,6 +73,25 @@ const MasterOrderDetail = () => {
       fetchOrder();
     } catch (err) {
       message.error(err.response?.data?.message || 'Помилка');
+    }
+  };
+
+  const handleAddRepairType = async () => {
+    if (!selectedRepairType) return;
+    setAddingRepair(true);
+    try {
+      await ordersAPI.addRepairType(id, {
+        repairTypeId: selectedRepairType,
+        cost: repairCost || 0,
+      });
+      message.success('Виконану роботу додано');
+      setSelectedRepairType(null);
+      setRepairCost(null);
+      fetchOrder();
+    } catch (err) {
+      message.error(err.response?.data?.message || 'Не вдалося додати виконану роботу');
+    } finally {
+      setAddingRepair(false);
     }
   };
 
@@ -133,6 +157,64 @@ const MasterOrderDetail = () => {
               { title: 'Кількість', dataIndex: 'quantity' },
               { title: 'Ціна', dataIndex: 'priceAtUse', render: (v) => `${parseFloat(v).toFixed(0)} грн` },
             ]} />
+        )}
+      </Card>
+
+      {/* Completed repair work */}
+      <Card title="Виконані роботи" style={{ marginBottom: 16 }}>
+        <Space wrap style={{ marginBottom: 12 }}>
+          <Select
+            placeholder="Оберіть тип ремонту"
+            value={selectedRepairType}
+            onChange={setSelectedRepairType}
+            style={{ width: 350 }}
+            showSearch
+            optionFilterProp="label"
+            options={repairTypes.map((repairType) => ({
+              value: repairType.id,
+              label: repairType.name,
+            }))}
+          />
+          <InputNumber
+            placeholder="Вартість"
+            value={repairCost}
+            onChange={setRepairCost}
+            min={0}
+            precision={2}
+            addonAfter="грн"
+            style={{ width: 190 }}
+          />
+          <Button
+            type="primary"
+            onClick={handleAddRepairType}
+            disabled={!selectedRepairType}
+            loading={addingRepair}
+          >
+            Додати роботу
+          </Button>
+        </Space>
+
+        {order.orderRepairs?.length > 0 ? (
+          <Table
+            dataSource={order.orderRepairs}
+            rowKey="id"
+            pagination={false}
+            size="small"
+            columns={[
+              { title: 'Тип ремонту', render: (_, row) => row.repairType?.name || '—' },
+              {
+                title: 'Опис',
+                render: (_, row) => row.repairType?.description || '—',
+              },
+              {
+                title: 'Вартість',
+                dataIndex: 'cost',
+                render: (value) => `${parseFloat(value || 0).toFixed(0)} грн`,
+              },
+            ]}
+          />
+        ) : (
+          <Text type="secondary">Виконані роботи ще не додані</Text>
         )}
       </Card>
 

@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   db:
     image: postgres:15
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: zXc1@3aSd
+      POSTGRES_PASSWORD: qwerty2445
       POSTGRES_DB: repair_service
     ports:
       - "5432:5432"
@@ -22,7 +20,7 @@ services:
       - DB_HOST=db
       - DB_PORT=5432
       - DB_USER=postgres
-      - DB_PASSWORD=zXc1@3aSd
+      - DB_PASSWORD=qwerty2445
       - DB_NAME=repair_service
       - ML_SERVICE_URL=http://ml-service:5001
       - CLIENT_URL=http://localhost:5173

@@ -2,6 +2,19 @@ const { RepairOrder, Device, User, OrderStatusHistory, OrderPart, OrderRepair, P
 const { Op } = require('sequelize');
 const crypto = require('crypto');
 
+const canAccessOrder = (user, order) => {
+  if (user.role === 'admin') return true;
+  if (user.role === 'client') return order.clientId === user.id;
+  if (user.role === 'master') return order.masterId === user.id;
+  return false;
+};
+
+const denyOrderAccess = (req, res, order) => {
+  if (canAccessOrder(req.user, order)) return false;
+  res.status(403).json({ message: 'Немає доступу до цього замовлення' });
+  return true;
+};
+
 const generateOrderNumber = () => {
   const date = new Date();
   const prefix = `SR${date.getFullYear().toString().slice(-2)}${String(date.getMonth() + 1).padStart(2, '0')}`;
@@ -128,11 +141,15 @@ exports.update = async (req, res, next) => {
   try {
     const order = await RepairOrder.findByPk(req.params.id);
     if (!order) return res.status(404).json({ message: 'Заявку не знайдено' });
+    if (denyOrderAccess(req, res, order)) return;
 
     const { masterId, diagnosis, totalCost, deadline } = req.body;
-    await order.update({ masterId, diagnosis, totalCost, deadline });
+    const previousMasterId = order.masterId;
+    const updateData = { diagnosis, totalCost, deadline };
+    if (req.user.role === 'admin') updateData.masterId = masterId;
+    await order.update(updateData);
 
-    if (masterId && masterId !== order.masterId) {
+    if (req.user.role === 'admin' && masterId && masterId !== previousMasterId) {
       await createNotification(masterId, 'Нова заявка', `Вам призначено заявку ${order.orderNumber}`);
     }
 
@@ -146,6 +163,7 @@ exports.updateStatus = async (req, res, next) => {
   try {
     const order = await RepairOrder.findByPk(req.params.id);
     if (!order) return res.status(404).json({ message: 'Заявку не знайдено' });
+    if (denyOrderAccess(req, res, order)) return;
 
     const { status, comment } = req.body;
     const oldStatus = order.status;
@@ -186,6 +204,10 @@ exports.addPart = async (req, res, next) => {
   try {
     const order = await RepairOrder.findByPk(req.params.id, { transaction: t });
     if (!order) { await t.rollback(); return res.status(404).json({ message: 'Заявку не знайдено' }); }
+    if (!canAccessOrder(req.user, order)) {
+      await t.rollback();
+      return res.status(403).json({ message: 'Немає доступу до цього замовлення' });
+    }
 
     const { partId, quantity } = req.body;
     const part = await Part.findByPk(partId, { lock: t.LOCK.UPDATE, transaction: t });
@@ -217,6 +239,7 @@ exports.addRepairType = async (req, res, next) => {
   try {
     const order = await RepairOrder.findByPk(req.params.id);
     if (!order) return res.status(404).json({ message: 'Заявку не знайдено' });
+    if (denyOrderAccess(req, res, order)) return;
 
     const { repairTypeId, cost } = req.body;
     const orderRepair = await OrderRepair.create({
@@ -233,6 +256,10 @@ exports.addRepairType = async (req, res, next) => {
 
 exports.getTimeline = async (req, res, next) => {
   try {
+    const order = await RepairOrder.findByPk(req.params.id);
+    if (!order) return res.status(404).json({ message: 'Замовлення не знайдено' });
+    if (denyOrderAccess(req, res, order)) return;
+
     const history = await OrderStatusHistory.findAll({
       where: { orderId: req.params.id },
       include: [{ model: User, as: 'changedByUser', attributes: ['id', 'firstName', 'lastName'] }],

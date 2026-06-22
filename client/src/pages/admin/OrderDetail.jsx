@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Card, Descriptions, Tag, Timeline, Select, Button, Input, Space, Typography, Spin, Table, Divider, message, Modal } from 'antd';
 import { ordersAPI, usersAPI, partsAPI, predictionsAPI } from '../../api';
 import { STATUS_LABELS, STATUS_TAG_COLORS, DEVICE_TYPE_LABELS } from '../../utils/constants';
+import PredictionResults from '../../components/PredictionResults';
 
 const { Title, Text, Paragraph } = Typography;
 const { TextArea } = Input;

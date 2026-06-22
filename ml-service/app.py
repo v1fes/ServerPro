@@ -54,7 +54,17 @@ def load_models():
 def prepare_input(data):
     """Prepare a single device input for prediction."""
     from training.feature_engineering import prepare_single_device
-    return prepare_single_device(data, encoders, scaler)
+    normalized = dict(data)
+    season_map = {
+        'winter': 1,
+        'spring': 2,
+        'summer': 3,
+        'autumn': 4,
+    }
+    season = normalized.get('season')
+    if isinstance(season, str):
+        normalized['season'] = season_map.get(season.lower(), 1)
+    return prepare_single_device(normalized, encoders, scaler)
 
 
 @app.route('/health', methods=['GET'])

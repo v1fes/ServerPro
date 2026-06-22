@@ -230,10 +230,14 @@ module.exports = {
         // Order repairs
         if (status !== 'new') {
           const numRepairs = randInt(1, 2);
-          for (let r = 0; r < numRepairs; r++) {
+          const repairTypeIds = new Set();
+          while (repairTypeIds.size < numRepairs) {
+            repairTypeIds.add(randInt(1, repairTypesList.length));
+          }
+          for (const repairTypeId of repairTypeIds) {
             orderRepairsList.push({
               order_id: orderCounter,
-              repair_type_id: randInt(1, repairTypesList.length),
+              repair_type_id: repairTypeId,
               cost: randInt(200, 3000),
               created_at: new Date(createdDate.getTime() + 2 * 86400000),
             });
@@ -243,8 +247,11 @@ module.exports = {
         // Order parts (for in_progress+ orders)
         if (['in_progress', 'waiting_parts', 'ready', 'issued'].includes(status)) {
           const numParts = randInt(1, 2);
-          for (let p = 0; p < numParts; p++) {
-            const partId = randInt(1, partsList.length);
+          const partIds = new Set();
+          while (partIds.size < numParts) {
+            partIds.add(randInt(1, partsList.length));
+          }
+          for (const partId of partIds) {
             orderPartsList.push({
               order_id: orderCounter,
               part_id: partId,

@@ -2,6 +2,50 @@ const axios = require('axios');
 const { Device, RepairOrder, Prediction, User, OrderRepair, RepairType } = require('../models');
 const { analyzeDeviceHistory } = require('../services/geminiService');
 
+const canAccessDevice = (user, device) => {
+  if (user.role === 'admin') return true;
+  if (user.role === 'client') return device.clientId === user.id;
+  return true;
+};
+
+const findAccessibleDevice = async (deviceId, user, options = {}) => {
+  const device = await Device.findByPk(deviceId, options);
+  if (!device) return { status: 404, message: 'Пристрій не знайдено' };
+  if (!canAccessDevice(user, device)) {
+    return { status: 403, message: 'Немає доступу до цього пристрою' };
+  }
+  return { device };
+};
+
+const getStoredMLResult = (mlResult) => {
+  const result = mlResult?.prediction;
+  return {
+    predictedFailureType: result?.predictedFailureType || null,
+    probability: result?.failureProbability ?? null,
+    predictedDate: result?.predictedDate || null,
+    modelVersion: result ? (mlResult.modelVersion || 'random-forest-v1') : null,
+  };
+};
+
+const normalizeRepairType = (repairTypes) => {
+  const value = (repairTypes || '').toLowerCase();
+  const mappings = [
+    ['екран', 'screen_damage'],
+    ['батар', 'battery_degradation'],
+    ['заряд', 'charging_port'],
+    ['материн', 'motherboard_failure'],
+    ['камер', 'camera_failure'],
+    ['клавіат', 'keyboard_failure'],
+    ['пил', 'overheating'],
+    ['динамік', 'speaker_failure'],
+    ['даних', 'data_recovery'],
+    ['залит', 'water_damage'],
+    ['тачскр', 'touchscreen_failure'],
+    ['пз', 'software_issue'],
+  ];
+  return mappings.find(([fragment]) => value.includes(fragment))?.[1] || 'none';
+};
+
 const getDeviceRepairHistory = async (deviceId) => {
   const orders = await RepairOrder.findAll({
     where: { deviceId },
@@ -24,10 +68,11 @@ const getDeviceRepairHistory = async (deviceId) => {
 // ML prediction from Python service
 exports.predictML = async (req, res, next) => {
   try {
-    const device = await Device.findByPk(req.params.deviceId, {
+    const access = await findAccessibleDevice(req.params.deviceId, req.user, {
       include: [{ model: User, as: 'client' }],
     });
-    if (!device) return res.status(404).json({ message: 'Пристрій не знайдено' });
+    if (!access.device) return res.status(access.status).json({ message: access.message });
+    const { device } = access;
 
     const repairHistory = await getDeviceRepairHistory(device.id);
 
@@ -51,7 +96,9 @@ exports.predictML = async (req, res, next) => {
         ? Math.floor((Date.now() - new Date(repairHistory[repairHistory.length - 1].date).getTime()) / (1000 * 60 * 60 * 24 * 30))
         : ageMonths,
       total_cost: repairHistory.reduce((sum, r) => sum + r.cost, 0),
-      last_repair_type: repairHistory.length > 0 ? repairHistory[repairHistory.length - 1].repairTypes : '',
+      last_repair_type: repairHistory.length > 0
+        ? normalizeRepairType(repairHistory[repairHistory.length - 1].repairTypes)
+        : 'none',
       season,
     };
 
@@ -63,12 +110,10 @@ exports.predictML = async (req, res, next) => {
       console.log('ML service unavailable, using Gemini only');
     }
 
+    const storedMLResult = getStoredMLResult(mlResult);
     const prediction = await Prediction.create({
       deviceId: device.id,
-      predictedFailureType: mlResult?.predicted_failure || null,
-      probability: mlResult?.probability || null,
-      predictedDate: mlResult?.predicted_date || null,
-      modelVersion: mlResult?.model_version || null,
+      ...storedMLResult,
       source: 'ml',
     });
 
@@ -81,8 +126,9 @@ exports.predictML = async (req, res, next) => {
 // Gemini AI analysis
 exports.predictGemini = async (req, res, next) => {
   try {
-    const device = await Device.findByPk(req.params.deviceId);
-    if (!device) return res.status(404).json({ message: 'Пристрій не знайдено' });
+    const access = await findAccessibleDevice(req.params.deviceId, req.user);
+    if (!access.device) return res.status(access.status).json({ message: access.message });
+    const { device } = access;
 
     const repairHistory = await getDeviceRepairHistory(device.id);
 
@@ -119,8 +165,9 @@ exports.predictGemini = async (req, res, next) => {
 // Combined prediction (ML + Gemini)
 exports.predictCombined = async (req, res, next) => {
   try {
-    const device = await Device.findByPk(req.params.deviceId);
-    if (!device) return res.status(404).json({ message: 'Пристрій не знайдено' });
+    const access = await findAccessibleDevice(req.params.deviceId, req.user);
+    if (!access.device) return res.status(access.status).json({ message: access.message });
+    const { device } = access;
 
     const repairHistory = await getDeviceRepairHistory(device.id);
     const ageMonths = device.purchaseDate
@@ -145,7 +192,9 @@ exports.predictCombined = async (req, res, next) => {
           ? Math.floor((Date.now() - new Date(repairHistory[repairHistory.length - 1].date).getTime()) / (1000 * 60 * 60 * 24 * 30))
           : ageMonths,
         total_cost: repairHistory.reduce((sum, r) => sum + r.cost, 0),
-        last_repair_type: repairHistory.length > 0 ? repairHistory[repairHistory.length - 1].repairTypes : '',
+        last_repair_type: repairHistory.length > 0
+          ? normalizeRepairType(repairHistory[repairHistory.length - 1].repairTypes)
+          : 'none',
         season,
       };
       const mlResponse = await axios.post(`${process.env.ML_SERVICE_URL}/predict`, features, { timeout: 10000 });
@@ -162,18 +211,20 @@ exports.predictCombined = async (req, res, next) => {
 
     const topPrediction = geminiResult.predictedFailures?.[0];
 
+    const storedMLResult = getStoredMLResult(mlResult);
     const prediction = await Prediction.create({
       deviceId: device.id,
-      predictedFailureType: mlResult?.predicted_failure || topPrediction?.type || null,
-      probability: mlResult?.probability || topPrediction?.probability || null,
-      predictedDate: mlResult?.predicted_date || null,
-      modelVersion: mlResult?.model_version || null,
+      predictedFailureType: storedMLResult.predictedFailureType || topPrediction?.type || null,
+      probability: storedMLResult.probability ?? topPrediction?.probability ?? null,
+      predictedDate: storedMLResult.predictedDate,
+      modelVersion: storedMLResult.modelVersion,
       source: 'combined',
       geminiAnalysis: geminiResult.analysis,
       recommendations: JSON.stringify({
         recommendations: geminiResult.recommendations,
         predictedFailures: geminiResult.predictedFailures,
-        riskLevel: geminiResult.riskLevel,
+        riskLevel: mlResult?.prediction?.riskLevel || geminiResult.riskLevel,
+        geminiRiskLevel: geminiResult.riskLevel,
         mlPrediction: mlResult,
       }),
     });
@@ -191,6 +242,9 @@ exports.predictCombined = async (req, res, next) => {
 // Get latest predictions for a device
 exports.getDevicePredictions = async (req, res, next) => {
   try {
+    const access = await findAccessibleDevice(req.params.deviceId, req.user);
+    if (!access.device) return res.status(access.status).json({ message: access.message });
+
     const predictions = await Prediction.findAll({
       where: { deviceId: req.params.deviceId },
       order: [['createdAt', 'DESC']],
